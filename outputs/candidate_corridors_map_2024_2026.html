@@ -1,0 +1,2844 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c73b0b5bb11ba74920072f58e2065689 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c73b0b5bb11ba74920072f58e2065689" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c73b0b5bb11ba74920072f58e2065689 = L.map(
+                "map_c73b0b5bb11ba74920072f58e2065689",
+                {
+                    center: [29.430036097625, -98.498397688625],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_c73b0b5bb11ba74920072f58e2065689);
+
+            
+
+        
+    
+            var tile_layer_3327a590705db36ea9775f45f71f7135 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3327a590705db36ea9775f45f71f7135.addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        function geo_json_d98b0881e4fecb1baf91a06d8cc1939f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#d95f02", "opacity": 0.85, "weight": 6};
+            }
+        }
+
+        function geo_json_d98b0881e4fecb1baf91a06d8cc1939f_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_d98b0881e4fecb1baf91a06d8cc1939f = L.geoJson(null, {
+                onEachFeature: geo_json_d98b0881e4fecb1baf91a06d8cc1939f_onEachFeature,
+            
+                style: geo_json_d98b0881e4fecb1baf91a06d8cc1939f_styler,
+            ...{
+}
+        });
+
+        function geo_json_d98b0881e4fecb1baf91a06d8cc1939f_add (data) {
+            geo_json_d98b0881e4fecb1baf91a06d8cc1939f
+                .addData(data);
+        }
+            geo_json_d98b0881e4fecb1baf91a06d8cc1939f_add({"features": [{"geometry": {"coordinates": [[[-98.42501917815886, 29.49791956848158], [-98.4242470144314, 29.498404408017475], [-98.42333680637276, 29.49897734189034], [-98.42266009003804, 29.499397954027888]], [[-98.40771487660555, 29.510319672561586], [-98.40559218556487, 29.511875809151856], [-98.40507104859235, 29.51227914710786], [-98.40476061913257, 29.512539034702762]]], "type": "MultiLineString"}, "id": "0", "properties": {"CouncilDis": "2_10", "GlobalID": "{E901E52A-FE71-4563-BDEB-E3238EB1F32A}", "HistoricDi": null, "LengthFeet": 923.08562613, "Maintenanc": "TXDOT", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 923.085626129, "candidate_group": 0, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "TBD", "from_streets": "WALZEM RD", "last_year": 2026, "length_miles": 0.17482682313068182, "max_match_distance_ft": 8.57647356623876, "road_class": "Primary Arterial A", "road_label": "AUSTIN HWY", "roads": "AUSTIN HWY", "segmentid": "309759", "serious_injuries": 2, "span_miles": 1.0085179623351987, "to_street": "TBD", "to_streets": "NE LOOP 410 ACCESS RD"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.49318333640632, 29.426421363946435], [-98.4930466578174, 29.42642565825963], [-98.49239621522122, 29.42645412852901]], [[-98.49133354285156, 29.426462462530676], [-98.48972580263052, 29.426472144996254]]], "type": "MultiLineString"}, "id": "1", "properties": {"CouncilDis": "1", "GlobalID": "{22148EC3-F89C-4469-A3C0-A04B7A0F73E0}", "HistoricDi": "Main / Military Plaza", "LengthFeet": 250.84049396, "Maintenanc": "COSA - Public Works Dept", "Material": "Brick and Block", "Neighborho": "Downtown Residents Association", "Owner": "San Antonio", "PavementWi": 22.0, "Shape_Leng": 250.840493955, "candidate_group": 1, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "SOLEDAD ST", "from_streets": "N ST MARYS, SOLEDAD ST", "last_year": 2024, "length_miles": 0.047507669310606064, "max_match_distance_ft": 4.594116121922741, "road_class": "None", "road_label": "E HOUSTON ST", "roads": "E HOUSTON ST", "segmentid": "510032", "serious_injuries": 2, "span_miles": 0.20577034722510054, "to_street": "BRIDGE", "to_streets": "BRIDGE, NAVARRO ST"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.59339078727875, 29.485376619494016], [-98.5939118381678, 29.4857625445778]], [[-98.59569497236023, 29.48713961362599], [-98.59692425910627, 29.48808252014754], [-98.59751111871306, 29.488527071009575]]], "type": "MultiLineString"}, "id": "2", "properties": {"CouncilDis": "7", "GlobalID": "{E1D846A0-626B-4A5D-B244-7B3B381D7725}", "HistoricDi": null, "LengthFeet": 217.18456923, "Maintenanc": "COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "San Antonio", "PavementWi": 74.0, "Shape_Leng": 217.184569228, "candidate_group": 2, "crashes": 2, "deaths": 1, "first_year": 2024, "from_street": "NW LOOP 410", "from_streets": "NW LOOP 410, WURZBACH RD", "last_year": 2025, "length_miles": 0.04113344114204545, "max_match_distance_ft": 3.047875943593348, "road_class": "None", "road_label": "EVERS RD", "roads": "EVERS RD", "segmentid": "416672", "serious_injuries": 1, "span_miles": 0.18653550413002834, "to_street": "NW LOOP 410 ACCESS RD", "to_streets": "JOINER DR, NW LOOP 410 ACCESS RD"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.5657303299362, 29.429947612285613], [-98.5660222937553, 29.429811737125956]], [[-98.5630292682844, 29.431001178322738], [-98.56314509015714, 29.430971896498786], [-98.56347459090837, 29.430876027971976], [-98.5636248236789, 29.430824951977154], [-98.56381515894961, 29.430763005835654], [-98.56406926229266, 29.430666201193034], [-98.56425963796762, 29.430594628748196], [-98.5645216383906, 29.430487536544994], [-98.5657303299362, 29.429947612285613]], [[-98.56941326748316, 29.42823513595849], [-98.5698263715073, 29.42805220140532], [-98.57052906692964, 29.427734059575705], [-98.57199818503395, 29.427068404026794], [-98.57241602358452, 29.42687791349288]]], "type": "MultiLineString"}, "id": "3", "properties": {"CouncilDis": "6", "GlobalID": "{7345E1B1-6BEF-4D0E-A703-FDA5C53F5110}", "HistoricDi": null, "LengthFeet": 105.25008641, "Maintenanc": "COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "San Antonio", "PavementWi": 66.0, "Shape_Leng": 105.250086409, "candidate_group": 3, "crashes": 3, "deaths": 2, "first_year": 2024, "from_street": "MONTEREY ST", "from_streets": "MONTEREY ST, S SAN JOAQUIN, W CESAR CHAVEZ BLVD", "last_year": 2025, "length_miles": 0.019933728486742422, "max_match_distance_ft": 1.6669485050726547, "road_class": "Secondary Arterial A", "road_label": "HISTORIC OLD HWY 90", "roads": "HISTORIC OLD HWY 90", "segmentid": "431415", "serious_injuries": 1, "span_miles": 0.542098735983591, "to_street": "MONTEREY ST", "to_streets": "MONTEREY ST, SW 36TH ST"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.4280907662558, 29.447138802590576], [-98.42638319317602, 29.44808237835863], [-98.42536048108298, 29.448627344224636], [-98.42462733992642, 29.448944592481492], [-98.42333659115515, 29.449514515631424]], [[-98.42690692444796, 29.448545290808813], [-98.42972774671851, 29.44701653813799], [-98.43095216061187, 29.446356199694765]]], "type": "MultiLineString"}, "id": "4", "properties": {"CouncilDis": "2", "GlobalID": "{BC4E6983-9548-41C4-A9AF-CF907A5D6C47}", "HistoricDi": null, "LengthFeet": 1744.09631045, "Maintenanc": "TXDOT", "Material": null, "Neighborho": "Non-NA Streets", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 1744.09631045, "candidate_group": 4, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "TBD", "from_streets": "", "last_year": 2026, "length_miles": 0.3303212709185606, "max_match_distance_ft": 33.52986612166625, "road_class": "None", "road_label": "IH 35 N ACCESS RD", "roads": "IH 35 N ACCESS RD", "segmentid": "313769", "serious_injuries": 2, "span_miles": 0.28410277626978564, "to_street": "TBD", "to_streets": ""}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.51276599450853, 29.39923513795185], [-98.51311730586443, 29.398834194325]], [[-98.5213738001885, 29.38934746565028], [-98.52192628802945, 29.388723073708178]]], "type": "MultiLineString"}, "id": "5", "properties": {"CouncilDis": "5", "GlobalID": "{259DD128-3623-467B-8799-4D5E5560640E}", "HistoricDi": null, "LengthFeet": 183.7543439, "Maintenanc": "TXDOT_COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Collins Garden", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 183.7543439, "candidate_group": 5, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "PRUITT", "from_streets": "PRADO ST, PRUITT", "last_year": 2026, "length_miles": 0.0348019590719697, "max_match_distance_ft": 4.620701913249613, "road_class": "Secondary Arterial B", "road_label": "NOGALITOS ST", "roads": "NOGALITOS ST", "segmentid": "409920", "serious_injuries": 2, "span_miles": 0.6922464664256426, "to_street": "DRAKE AVE", "to_streets": "CONCEPTION CT, DRAKE AVE"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.4790396139987, 29.325716768009706], [-98.47834834126395, 29.323409324465693], [-98.47799758992608, 29.322338090033906]], [[-98.4748735360157, 29.312807067484158], [-98.47407975413438, 29.310331424695576]]], "type": "MultiLineString"}, "id": "6", "properties": {"CouncilDis": "3", "GlobalID": "{74965660-467B-42AD-A5E7-C4428A6CB47B}", "HistoricDi": null, "LengthFeet": 1272.64130701, "Maintenanc": "TXDOT_COSA - Public Works Dept", "Material": null, "Neighborho": "Villa Coronado", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 1272.64130701, "candidate_group": 6, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "HERBST", "from_streets": "HERBST", "last_year": 2025, "length_miles": 0.24103055057007575, "max_match_distance_ft": 9.095131038151836, "road_class": "Primary Arterial A", "road_label": "ROOSEVELT AVE", "roads": "ROOSEVELT AVE", "segmentid": "504144", "serious_injuries": 2, "span_miles": 0.83585735362898, "to_street": "SE LOOP 410 ACCESS RD", "to_streets": "SE LOOP 410 ACCESS RD"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.48886539530162, 29.351669996913298], [-98.48820663842187, 29.350158257903203]], [[-98.49256608649605, 29.360486372855483], [-98.49221624527497, 29.359651022804073]]], "type": "MultiLineString"}, "id": "7", "properties": {"CouncilDis": "3", "GlobalID": "{E6BDF11A-2497-4E42-8772-A0D0DD86A36A}", "HistoricDi": null, "LengthFeet": 588.36762299, "Maintenanc": "COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "San Antonio", "PavementWi": 64.0, "Shape_Leng": 588.36762299, "candidate_group": 7, "crashes": 2, "deaths": 0, "first_year": 2025, "from_street": "E HARDING BLVD", "from_streets": "E HARDING BLVD, KENDALIA AVE", "last_year": 2026, "length_miles": 0.11143326192992424, "max_match_distance_ft": 4.332530497432884, "road_class": "Secondary Arterial B", "road_label": "S FLORES ST", "roads": "S FLORES ST", "segmentid": "504059", "serious_injuries": 2, "span_miles": 0.6425477157918398, "to_street": "GENEVIEVE DR", "to_streets": "E BONNER AVE, GENEVIEVE DR"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.35079336898288, 29.499033208067615], [-98.35069644227939, 29.498949543281114], [-98.35049637950503, 29.498769806444894], [-98.35011230304212, 29.49835884419579], [-98.34980723248769, 29.498007395649555], [-98.34920323086959, 29.497328588853986]], [[-98.37009431795661, 29.50829201728971], [-98.36928820238501, 29.507344205740633]]], "type": "MultiLineString"}, "id": "8", "properties": {"CouncilDis": "2", "GlobalID": "{07CE083D-1850-4614-B337-1F4BEF68B4F8}", "HistoricDi": null, "LengthFeet": 800.79712969, "Maintenanc": "TXDOT_COSA - Public Works Dept", "Material": null, "Neighborho": "Non-NA Streets", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 800.797129687, "candidate_group": 8, "crashes": 2, "deaths": 1, "first_year": 2025, "from_street": "TBD", "from_streets": "", "last_year": 2025, "length_miles": 0.1516661230473485, "max_match_distance_ft": 1.4187880261573778, "road_class": "Secondary Arterial A", "road_label": "WALZEM RD", "roads": "WALZEM RD", "segmentid": "313142", "serious_injuries": 1, "span_miles": 1.2457290877955418, "to_street": "TBD", "to_streets": ""}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_d98b0881e4fecb1baf91a06d8cc1939f.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["roads", "crashes", "deaths", "serious_injuries", "first_year", "last_year"];
+    let aliases = ["Road", "Crashes", "Deaths", "Serious injuries", "First year", "Last year"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_d98b0881e4fecb1baf91a06d8cc1939f.addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+            var circle_marker_04938078e91c506196d68bba5ebf8237 = L.circleMarker(
+                [29.42693866, -98.57229298],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_002fc4724b0bcf5eb833d0b6dff44d87 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ee9955c62908df22fdd75dc296e4f9b7 = $(`<div id="html_ee9955c62908df22fdd75dc296e4f9b7" style="width: 100.0%; height: 100.0%;"><b>Crash 19980922</b><br>Year: 2024<br>Road: HISTORIC OLD HWY 90<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 63<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.426939<br>Longitude: -98.572293</div>`)[0];
+                popup_002fc4724b0bcf5eb833d0b6dff44d87.setContent(html_ee9955c62908df22fdd75dc296e4f9b7);
+            
+        
+
+        circle_marker_04938078e91c506196d68bba5ebf8237.bindPopup(popup_002fc4724b0bcf5eb833d0b6dff44d87)
+        ;
+
+        
+    
+    
+            circle_marker_04938078e91c506196d68bba5ebf8237.bindTooltip(
+                `<div>
+                     2024 — Crash 19980922
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d1e99f5d54229403e4aaa5092a8bda7 = L.circleMarker(
+                [29.35621499, -98.61564229],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_10817ecc0fc3abc7636be10279e3b414 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2177f603f20ebf62ff81ee62e6fe6ae2 = $(`<div id="html_2177f603f20ebf62ff81ee62e6fe6ae2" style="width: 100.0%; height: 100.0%;"><b>Crash 20013870</b><br>Year: 2024<br>Road: FIVE PALMS DR<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 30<br>Victim gender: 2 - FEMALE<br>Helmet: 2 - WORN, DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.356215<br>Longitude: -98.615642</div>`)[0];
+                popup_10817ecc0fc3abc7636be10279e3b414.setContent(html_2177f603f20ebf62ff81ee62e6fe6ae2);
+            
+        
+
+        circle_marker_0d1e99f5d54229403e4aaa5092a8bda7.bindPopup(popup_10817ecc0fc3abc7636be10279e3b414)
+        ;
+
+        
+    
+    
+            circle_marker_0d1e99f5d54229403e4aaa5092a8bda7.bindTooltip(
+                `<div>
+                     2024 — Crash 20013870
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3724d35c329368a64cd84acfd34318a = L.circleMarker(
+                [29.35722192, -98.62218643],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_43bd53253e0e56f8a19b4dfbe46673af = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9f4df00e554f1be86503b706abb9833d = $(`<div id="html_9f4df00e554f1be86503b706abb9833d" style="width: 100.0%; height: 100.0%;"><b>Crash 20033596</b><br>Year: 2024<br>Road: RAY ELLISON BLVD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 28<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.357222<br>Longitude: -98.622186</div>`)[0];
+                popup_43bd53253e0e56f8a19b4dfbe46673af.setContent(html_9f4df00e554f1be86503b706abb9833d);
+            
+        
+
+        circle_marker_a3724d35c329368a64cd84acfd34318a.bindPopup(popup_43bd53253e0e56f8a19b4dfbe46673af)
+        ;
+
+        
+    
+    
+            circle_marker_a3724d35c329368a64cd84acfd34318a.bindTooltip(
+                `<div>
+                     2024 — Crash 20033596
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_685ce367c874c5fbbb222ec635bb08dc = L.circleMarker(
+                [29.33556181, -98.45349578],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_7aebf6a484faaf2311b44f7b1599b3fb = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e94362de625bb9f8fd1e6105ac24cfc8 = $(`<div id="html_e94362de625bb9f8fd1e6105ac24cfc8" style="width: 100.0%; height: 100.0%;"><b>Crash 20037935</b><br>Year: 2024<br>Road: S PRESA ST<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 65<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.335562<br>Longitude: -98.453496</div>`)[0];
+                popup_7aebf6a484faaf2311b44f7b1599b3fb.setContent(html_e94362de625bb9f8fd1e6105ac24cfc8);
+            
+        
+
+        circle_marker_685ce367c874c5fbbb222ec635bb08dc.bindPopup(popup_7aebf6a484faaf2311b44f7b1599b3fb)
+        ;
+
+        
+    
+    
+            circle_marker_685ce367c874c5fbbb222ec635bb08dc.bindTooltip(
+                `<div>
+                     2024 — Crash 20037935
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20c7081bed5589b3b0e6d1bdc7083dc7 = L.circleMarker(
+                [29.42703497, -98.5608123],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_69d87eaa34447e1f1ea029b1a7a5f625 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_22ecc687bc14b81ae7533a6d5c474206 = $(`<div id="html_22ecc687bc14b81ae7533a6d5c474206" style="width: 100.0%; height: 100.0%;"><b>Crash 20043829</b><br>Year: 2024<br>Road: S SAN GABRIEL<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 55<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.427035<br>Longitude: -98.560812</div>`)[0];
+                popup_69d87eaa34447e1f1ea029b1a7a5f625.setContent(html_22ecc687bc14b81ae7533a6d5c474206);
+            
+        
+
+        circle_marker_20c7081bed5589b3b0e6d1bdc7083dc7.bindPopup(popup_69d87eaa34447e1f1ea029b1a7a5f625)
+        ;
+
+        
+    
+    
+            circle_marker_20c7081bed5589b3b0e6d1bdc7083dc7.bindTooltip(
+                `<div>
+                     2024 — Crash 20043829
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1539e10604eee0b3f43dc7f27a5d8f0 = L.circleMarker(
+                [29.29682737, -98.47608232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_9c16ff4835e607b9e512fb9a609c6eac = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6faf94ee9a1a1083d92524ff53c03c42 = $(`<div id="html_6faf94ee9a1a1083d92524ff53c03c42" style="width: 100.0%; height: 100.0%;"><b>Crash 20045954</b><br>Year: 2024<br>Road: CLUB HOUSE BLVD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 74<br>Victim gender: 1 - MALE<br>Helmet: 2 - WORN, DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.296827<br>Longitude: -98.476082</div>`)[0];
+                popup_9c16ff4835e607b9e512fb9a609c6eac.setContent(html_6faf94ee9a1a1083d92524ff53c03c42);
+            
+        
+
+        circle_marker_f1539e10604eee0b3f43dc7f27a5d8f0.bindPopup(popup_9c16ff4835e607b9e512fb9a609c6eac)
+        ;
+
+        
+    
+    
+            circle_marker_f1539e10604eee0b3f43dc7f27a5d8f0.bindTooltip(
+                `<div>
+                     2024 — Crash 20045954
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b4babd31468720ab8486b217628429f = L.circleMarker(
+                [29.56444097, -98.48247293],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_f44a116a28d016cd62cac2cefc4bef44 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5e72cf90c63a4bf14c30420565d21b9d = $(`<div id="html_5e72cf90c63a4bf14c30420565d21b9d" style="width: 100.0%; height: 100.0%;"><b>Crash 20046105</b><br>Year: 2024<br>Road: US HWY 281 N<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 43<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.564441<br>Longitude: -98.482473</div>`)[0];
+                popup_f44a116a28d016cd62cac2cefc4bef44.setContent(html_5e72cf90c63a4bf14c30420565d21b9d);
+            
+        
+
+        circle_marker_1b4babd31468720ab8486b217628429f.bindPopup(popup_f44a116a28d016cd62cac2cefc4bef44)
+        ;
+
+        
+    
+    
+            circle_marker_1b4babd31468720ab8486b217628429f.bindTooltip(
+                `<div>
+                     2024 — Crash 20046105
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8da8924f8a0fa860be22b7cbaa70605b = L.circleMarker(
+                [29.28304454, -98.3991035],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_d671c33e2bf3fd672ef95029ba0ee0ce = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e9b6487ff6f623b088a468867830e457 = $(`<div id="html_e9b6487ff6f623b088a468867830e457" style="width: 100.0%; height: 100.0%;"><b>Crash 20047884</b><br>Year: 2024<br>Road: SOUTHTON RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 33<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.283045<br>Longitude: -98.399103</div>`)[0];
+                popup_d671c33e2bf3fd672ef95029ba0ee0ce.setContent(html_e9b6487ff6f623b088a468867830e457);
+            
+        
+
+        circle_marker_8da8924f8a0fa860be22b7cbaa70605b.bindPopup(popup_d671c33e2bf3fd672ef95029ba0ee0ce)
+        ;
+
+        
+    
+    
+            circle_marker_8da8924f8a0fa860be22b7cbaa70605b.bindTooltip(
+                `<div>
+                     2024 — Crash 20047884
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_596dee5ea4faafbefff5722711cd0d43 = L.circleMarker(
+                [29.43353641, -98.48730098],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_01d58b549fab95393f1177fda89f1fcd = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5d1c6b9082bd5898cf640e9de6aecc2c = $(`<div id="html_5d1c6b9082bd5898cf640e9de6aecc2c" style="width: 100.0%; height: 100.0%;"><b>Crash 20073977</b><br>Year: 2024<br>Road: McCullough Ave<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.433536<br>Longitude: -98.487301</div>`)[0];
+                popup_01d58b549fab95393f1177fda89f1fcd.setContent(html_5d1c6b9082bd5898cf640e9de6aecc2c);
+            
+        
+
+        circle_marker_596dee5ea4faafbefff5722711cd0d43.bindPopup(popup_01d58b549fab95393f1177fda89f1fcd)
+        ;
+
+        
+    
+    
+            circle_marker_596dee5ea4faafbefff5722711cd0d43.bindTooltip(
+                `<div>
+                     2024 — Crash 20073977
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_791497802bad3ec95e145f5bbb929008 = L.circleMarker(
+                [29.52886495, -98.50050231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_25b45d0baa5d8d75d95275ed395f58b0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d162842251dbc152d8750759676d80d7 = $(`<div id="html_d162842251dbc152d8750759676d80d7" style="width: 100.0%; height: 100.0%;"><b>Crash 20121055</b><br>Year: 2024<br>Road: LORENE<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 57<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 16 - DISREGARD STOP SIGN OR LIGHT; 20 - DRIVER INATTENTION; No Data<br>Latitude: 29.528865<br>Longitude: -98.500502</div>`)[0];
+                popup_25b45d0baa5d8d75d95275ed395f58b0.setContent(html_d162842251dbc152d8750759676d80d7);
+            
+        
+
+        circle_marker_791497802bad3ec95e145f5bbb929008.bindPopup(popup_25b45d0baa5d8d75d95275ed395f58b0)
+        ;
+
+        
+    
+    
+            circle_marker_791497802bad3ec95e145f5bbb929008.bindTooltip(
+                `<div>
+                     2024 — Crash 20121055
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85d484805601aa7ad92683a844a34268 = L.circleMarker(
+                [29.394747, -98.65807517],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_2135311d7084d4dc5217c41114e002f4 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_dc461101cd9f4144a04a58abb7ebf7a3 = $(`<div id="html_dc461101cd9f4144a04a58abb7ebf7a3" style="width: 100.0%; height: 100.0%;"><b>Crash 20123688</b><br>Year: 2024<br>Road: US HWY 90 W ACCESS RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 41<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); 21 - DROVE WITHOUT HEADLIGHTS; No Data<br>Latitude: 29.394747<br>Longitude: -98.658075</div>`)[0];
+                popup_2135311d7084d4dc5217c41114e002f4.setContent(html_dc461101cd9f4144a04a58abb7ebf7a3);
+            
+        
+
+        circle_marker_85d484805601aa7ad92683a844a34268.bindPopup(popup_2135311d7084d4dc5217c41114e002f4)
+        ;
+
+        
+    
+    
+            circle_marker_85d484805601aa7ad92683a844a34268.bindTooltip(
+                `<div>
+                     2024 — Crash 20123688
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b0be91f334dda04d446f4e973316759 = L.circleMarker(
+                [29.52050745, -98.50504964],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_f7ee5ae8dde1e4631fed8319ab3bc769 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_95f5def1d567f9bb7442fbf5daeba123 = $(`<div id="html_95f5def1d567f9bb7442fbf5daeba123" style="width: 100.0%; height: 100.0%;"><b>Crash 20154176</b><br>Year: 2024<br>Road: NW LOOP 410<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.520507<br>Longitude: -98.505050</div>`)[0];
+                popup_f7ee5ae8dde1e4631fed8319ab3bc769.setContent(html_95f5def1d567f9bb7442fbf5daeba123);
+            
+        
+
+        circle_marker_4b0be91f334dda04d446f4e973316759.bindPopup(popup_f7ee5ae8dde1e4631fed8319ab3bc769)
+        ;
+
+        
+    
+    
+            circle_marker_4b0be91f334dda04d446f4e973316759.bindTooltip(
+                `<div>
+                     2024 — Crash 20154176
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e33cd05a2561fdc2f9b2ce7b8ebf46df = L.circleMarker(
+                [29.44947264, -98.42342232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_dcb2c8431da3c4530984860d464088f4 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7aa3a00207a3f67eda3e836bb240e4e2 = $(`<div id="html_7aa3a00207a3f67eda3e836bb240e4e2" style="width: 100.0%; height: 100.0%;"><b>Crash 20198215</b><br>Year: 2024<br>Road: IH 35 N ACCESS RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 40<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.449473<br>Longitude: -98.423422</div>`)[0];
+                popup_dcb2c8431da3c4530984860d464088f4.setContent(html_7aa3a00207a3f67eda3e836bb240e4e2);
+            
+        
+
+        circle_marker_e33cd05a2561fdc2f9b2ce7b8ebf46df.bindPopup(popup_dcb2c8431da3c4530984860d464088f4)
+        ;
+
+        
+    
+    
+            circle_marker_e33cd05a2561fdc2f9b2ce7b8ebf46df.bindTooltip(
+                `<div>
+                     2024 — Crash 20198215
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c361eccaef641d3fdd021a2bb255afce = L.circleMarker(
+                [29.45993496, -98.49932231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_1e7106ee3b59885e1d022cdfaa8b9d33 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_14e1dcf1f76943c1f032c5528ed64565 = $(`<div id="html_14e1dcf1f76943c1f032c5528ed64565" style="width: 100.0%; height: 100.0%;"><b>Crash 20202028</b><br>Year: 2024<br>Road: W KINGS HWY<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 23<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.459935<br>Longitude: -98.499322</div>`)[0];
+                popup_1e7106ee3b59885e1d022cdfaa8b9d33.setContent(html_14e1dcf1f76943c1f032c5528ed64565);
+            
+        
+
+        circle_marker_c361eccaef641d3fdd021a2bb255afce.bindPopup(popup_1e7106ee3b59885e1d022cdfaa8b9d33)
+        ;
+
+        
+    
+    
+            circle_marker_c361eccaef641d3fdd021a2bb255afce.bindTooltip(
+                `<div>
+                     2024 — Crash 20202028
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73fc6262aea1dc28e2260a46bfda3aa7 = L.circleMarker(
+                [29.4495974, -98.52437231],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_55f6e43474539089dbcf22391eb1fbc6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_474a5e62d2d9fbafdc231d52380fabee = $(`<div id="html_474a5e62d2d9fbafdc231d52380fabee" style="width: 100.0%; height: 100.0%;"><b>Crash 20258650</b><br>Year: 2024<br>Road: N ZARZAMORA<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 34 - FAILED TO YIELD RIGHT OF WAY - PRIVATE DRIVE; No Data; No Data<br>Latitude: 29.449597<br>Longitude: -98.524372</div>`)[0];
+                popup_55f6e43474539089dbcf22391eb1fbc6.setContent(html_474a5e62d2d9fbafdc231d52380fabee);
+            
+        
+
+        circle_marker_73fc6262aea1dc28e2260a46bfda3aa7.bindPopup(popup_55f6e43474539089dbcf22391eb1fbc6)
+        ;
+
+        
+    
+    
+            circle_marker_73fc6262aea1dc28e2260a46bfda3aa7.bindTooltip(
+                `<div>
+                     2024 — Crash 20258650
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd76d0716a013a05231dfb590f8c0fc0 = L.circleMarker(
+                [29.35385877, -98.42407344],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_a58186badf800ae2f4082cd83362f0e0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4a8cc52e9fc97236b48c1b1c1ce4d091 = $(`<div id="html_4a8cc52e9fc97236b48c1b1c1ce4d091" style="width: 100.0%; height: 100.0%;"><b>Crash 20270302</b><br>Year: 2024<br>Road: SE MILITARY DR<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 49<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 33 - FAILED TO YIELD RIGHT OF WAY - OPEN INTERSECTION; No Data; No Data<br>Latitude: 29.353859<br>Longitude: -98.424073</div>`)[0];
+                popup_a58186badf800ae2f4082cd83362f0e0.setContent(html_4a8cc52e9fc97236b48c1b1c1ce4d091);
+            
+        
+
+        circle_marker_dd76d0716a013a05231dfb590f8c0fc0.bindPopup(popup_a58186badf800ae2f4082cd83362f0e0)
+        ;
+
+        
+    
+    
+            circle_marker_dd76d0716a013a05231dfb590f8c0fc0.bindTooltip(
+                `<div>
+                     2024 — Crash 20270302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d0902071aa3aa06ddbefb265067be9d = L.circleMarker(
+                [29.43085497, -98.62579228],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_789b27419a7372a9aced4ad9c535d79a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_34beb4a2f1b48dcc019e8b87ae26a861 = $(`<div id="html_34beb4a2f1b48dcc019e8b87ae26a861" style="width: 100.0%; height: 100.0%;"><b>Crash 20298414</b><br>Year: 2024<br>Road: BETTY LEVY<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 69 - WRONG SIDE - APPROACH OR INTERSECTION; No Data; No Data<br>Latitude: 29.430855<br>Longitude: -98.625792</div>`)[0];
+                popup_789b27419a7372a9aced4ad9c535d79a.setContent(html_34beb4a2f1b48dcc019e8b87ae26a861);
+            
+        
+
+        circle_marker_4d0902071aa3aa06ddbefb265067be9d.bindPopup(popup_789b27419a7372a9aced4ad9c535d79a)
+        ;
+
+        
+    
+    
+            circle_marker_4d0902071aa3aa06ddbefb265067be9d.bindTooltip(
+                `<div>
+                     2024 — Crash 20298414
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_319b16752a887fa3baaa840919070309 = L.circleMarker(
+                [29.32321145, -98.43291037],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_b61640317f01850ec18c210f3316d3ba = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ee386d61e82181db7cdcf7efe81703e3 = $(`<div id="html_ee386d61e82181db7cdcf7efe81703e3" style="width: 100.0%; height: 100.0%;"><b>Crash 20334599</b><br>Year: 2024<br>Road: SOUTHTON RD<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 63<br>Victim gender: 2 - FEMALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.323211<br>Longitude: -98.432910</div>`)[0];
+                popup_b61640317f01850ec18c210f3316d3ba.setContent(html_ee386d61e82181db7cdcf7efe81703e3);
+            
+        
+
+        circle_marker_319b16752a887fa3baaa840919070309.bindPopup(popup_b61640317f01850ec18c210f3316d3ba)
+        ;
+
+        
+    
+    
+            circle_marker_319b16752a887fa3baaa840919070309.bindTooltip(
+                `<div>
+                     2024 — Crash 20334599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df878cfe23b25b5f8f34af78c66e4538 = L.circleMarker(
+                [29.51089606, -98.40697059],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_425c535e04e828710aca5461d92d5432 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_02f7c187f7cc14835a7fa4f7c3082625 = $(`<div id="html_02f7c187f7cc14835a7fa4f7c3082625" style="width: 100.0%; height: 100.0%;"><b>Crash 20340999</b><br>Year: 2024<br>Road: AUSTIN HWY<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.510896<br>Longitude: -98.406971</div>`)[0];
+                popup_425c535e04e828710aca5461d92d5432.setContent(html_02f7c187f7cc14835a7fa4f7c3082625);
+            
+        
+
+        circle_marker_df878cfe23b25b5f8f34af78c66e4538.bindPopup(popup_425c535e04e828710aca5461d92d5432)
+        ;
+
+        
+    
+    
+            circle_marker_df878cfe23b25b5f8f34af78c66e4538.bindTooltip(
+                `<div>
+                     2024 — Crash 20340999
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb806f784163b4b3786fb166649dd420 = L.circleMarker(
+                [29.3566011, -98.51759777],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_f661edd3de6320ab17e015dfe53e04a6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f81ed47126e79fad5b3c8861fc0bd811 = $(`<div id="html_f81ed47126e79fad5b3c8861fc0bd811" style="width: 100.0%; height: 100.0%;"><b>Crash 20341297</b><br>Year: 2024<br>Road: SW MILITARY DR<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 58<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 34 - FAILED TO YIELD RIGHT OF WAY - PRIVATE DRIVE; No Data; No Data<br>Latitude: 29.356601<br>Longitude: -98.517598</div>`)[0];
+                popup_f661edd3de6320ab17e015dfe53e04a6.setContent(html_f81ed47126e79fad5b3c8861fc0bd811);
+            
+        
+
+        circle_marker_eb806f784163b4b3786fb166649dd420.bindPopup(popup_f661edd3de6320ab17e015dfe53e04a6)
+        ;
+
+        
+    
+    
+            circle_marker_eb806f784163b4b3786fb166649dd420.bindTooltip(
+                `<div>
+                     2024 — Crash 20341297
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fb319d2dd77898bf6eb8efb5949f291 = L.circleMarker(
+                [29.49409637, -98.70474457],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_893d29d779ce63fbda8cc85a2a215429 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_bd885026d1d14009aafa8a2541530207 = $(`<div id="html_bd885026d1d14009aafa8a2541530207" style="width: 100.0%; height: 100.0%;"><b>Crash 20364680</b><br>Year: 2024<br>Road: CULEBRA RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 36<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 15 - DISREGARD STOP AND GO SIGNAL; No Data; No Data<br>Latitude: 29.494096<br>Longitude: -98.704745</div>`)[0];
+                popup_893d29d779ce63fbda8cc85a2a215429.setContent(html_bd885026d1d14009aafa8a2541530207);
+            
+        
+
+        circle_marker_1fb319d2dd77898bf6eb8efb5949f291.bindPopup(popup_893d29d779ce63fbda8cc85a2a215429)
+        ;
+
+        
+    
+    
+            circle_marker_1fb319d2dd77898bf6eb8efb5949f291.bindTooltip(
+                `<div>
+                     2024 — Crash 20364680
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60b50b68226b16c4fc998537eea4228f = L.circleMarker(
+                [29.37335801, -98.51531817],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_c52a09b40d662d2a1d090c1e0a53b263 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a5e2bc7245e04cac1d5da6375acd973c = $(`<div id="html_a5e2bc7245e04cac1d5da6375acd973c" style="width: 100.0%; height: 100.0%;"><b>Crash 20366218</b><br>Year: 2024<br>Road: IH 35 S<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 41<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.373358<br>Longitude: -98.515318</div>`)[0];
+                popup_c52a09b40d662d2a1d090c1e0a53b263.setContent(html_a5e2bc7245e04cac1d5da6375acd973c);
+            
+        
+
+        circle_marker_60b50b68226b16c4fc998537eea4228f.bindPopup(popup_c52a09b40d662d2a1d090c1e0a53b263)
+        ;
+
+        
+    
+    
+            circle_marker_60b50b68226b16c4fc998537eea4228f.bindTooltip(
+                `<div>
+                     2024 — Crash 20366218
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8982b851acd6418d14e5e8fe2fb83d59 = L.circleMarker(
+                [29.44051363, -98.4806191],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_dffaf3dbffd8c41178e860b8242ce7b7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ec8ef4929bc7c313157ec3d82afbd331 = $(`<div id="html_ec8ef4929bc7c313157ec3d82afbd331" style="width: 100.0%; height: 100.0%;"><b>Crash 20368088</b><br>Year: 2024<br>Road: NEWELL<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 21<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: 44 - FOLLOWED TOO CLOSELY; No Data; No Data<br>Latitude: 29.440514<br>Longitude: -98.480619</div>`)[0];
+                popup_dffaf3dbffd8c41178e860b8242ce7b7.setContent(html_ec8ef4929bc7c313157ec3d82afbd331);
+            
+        
+
+        circle_marker_8982b851acd6418d14e5e8fe2fb83d59.bindPopup(popup_dffaf3dbffd8c41178e860b8242ce7b7)
+        ;
+
+        
+    
+    
+            circle_marker_8982b851acd6418d14e5e8fe2fb83d59.bindTooltip(
+                `<div>
+                     2024 — Crash 20368088
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3daee05f79ef010cbe3000f52d7e4143 = L.circleMarker(
+                [29.43092802, -98.56331164],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_58fed94d49096c2eb32811ce5f4d0493 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9c77a12a5a343eda8d59dc8c90bb3959 = $(`<div id="html_9c77a12a5a343eda8d59dc8c90bb3959" style="width: 100.0%; height: 100.0%;"><b>Crash 20375061</b><br>Year: 2024<br>Road: HISTORIC OLD HWY 90<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 58<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.430928<br>Longitude: -98.563312</div>`)[0];
+                popup_58fed94d49096c2eb32811ce5f4d0493.setContent(html_9c77a12a5a343eda8d59dc8c90bb3959);
+            
+        
+
+        circle_marker_3daee05f79ef010cbe3000f52d7e4143.bindPopup(popup_58fed94d49096c2eb32811ce5f4d0493)
+        ;
+
+        
+    
+    
+            circle_marker_3daee05f79ef010cbe3000f52d7e4143.bindTooltip(
+                `<div>
+                     2024 — Crash 20375061
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_36d35ef6e4a59b0f764089ced40609bc = L.circleMarker(
+                [29.54736443, -98.37478225],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_d32dea725e6d86e123db91cda266eb42 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f263122096bf79ccbaed679f65a4376c = $(`<div id="html_f263122096bf79ccbaed679f65a4376c" style="width: 100.0%; height: 100.0%;"><b>Crash 20382379</b><br>Year: 2024<br>Road: CROSSWINDS WAY<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 50<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.547364<br>Longitude: -98.374782</div>`)[0];
+                popup_d32dea725e6d86e123db91cda266eb42.setContent(html_f263122096bf79ccbaed679f65a4376c);
+            
+        
+
+        circle_marker_36d35ef6e4a59b0f764089ced40609bc.bindPopup(popup_d32dea725e6d86e123db91cda266eb42)
+        ;
+
+        
+    
+    
+            circle_marker_36d35ef6e4a59b0f764089ced40609bc.bindTooltip(
+                `<div>
+                     2024 — Crash 20382379
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6df256a6f233012c50bf6be98a99668f = L.circleMarker(
+                [29.48804996, -98.59686729],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_5d073d12e4cfb24da6606afa7cbb0083 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_425d957e06fac346b1ebdd72999b7276 = $(`<div id="html_425d957e06fac346b1ebdd72999b7276" style="width: 100.0%; height: 100.0%;"><b>Crash 20389091</b><br>Year: 2024<br>Road: EVERS RD<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 47<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.488050<br>Longitude: -98.596867</div>`)[0];
+                popup_5d073d12e4cfb24da6606afa7cbb0083.setContent(html_425d957e06fac346b1ebdd72999b7276);
+            
+        
+
+        circle_marker_6df256a6f233012c50bf6be98a99668f.bindPopup(popup_5d073d12e4cfb24da6606afa7cbb0083)
+        ;
+
+        
+    
+    
+            circle_marker_6df256a6f233012c50bf6be98a99668f.bindTooltip(
+                `<div>
+                     2024 — Crash 20389091
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fa318417be2f3ade71ae3abf0e381d0 = L.circleMarker(
+                [29.49893293, -98.56460433],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_419d4278bdd2bd7996bc5d005e09d840 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8cc52a9d6a9fd819fe94b6b19a645bf2 = $(`<div id="html_8cc52a9d6a9fd819fe94b6b19a645bf2" style="width: 100.0%; height: 100.0%;"><b>Crash 20397058</b><br>Year: 2024<br>Road: CALLAGHAN RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 19<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 21 - DROVE WITHOUT HEADLIGHTS; No Data; No Data<br>Latitude: 29.498933<br>Longitude: -98.564604</div>`)[0];
+                popup_419d4278bdd2bd7996bc5d005e09d840.setContent(html_8cc52a9d6a9fd819fe94b6b19a645bf2);
+            
+        
+
+        circle_marker_0fa318417be2f3ade71ae3abf0e381d0.bindPopup(popup_419d4278bdd2bd7996bc5d005e09d840)
+        ;
+
+        
+    
+    
+            circle_marker_0fa318417be2f3ade71ae3abf0e381d0.bindTooltip(
+                `<div>
+                     2024 — Crash 20397058
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4af495e286507e7bf0c4ed13bd54488a = L.circleMarker(
+                [29.32298807, -98.47818074],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_00d4f0d2a487096b374534663a8a6b0f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_fad72b92c949966f894a601867d229c7 = $(`<div id="html_fad72b92c949966f894a601867d229c7" style="width: 100.0%; height: 100.0%;"><b>Crash 20407728</b><br>Year: 2024<br>Road: ROOSEVELT AVE<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 35<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.322988<br>Longitude: -98.478181</div>`)[0];
+                popup_00d4f0d2a487096b374534663a8a6b0f.setContent(html_fad72b92c949966f894a601867d229c7);
+            
+        
+
+        circle_marker_4af495e286507e7bf0c4ed13bd54488a.bindPopup(popup_00d4f0d2a487096b374534663a8a6b0f)
+        ;
+
+        
+    
+    
+            circle_marker_4af495e286507e7bf0c4ed13bd54488a.bindTooltip(
+                `<div>
+                     2024 — Crash 20407728
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_036619dd2003e74e42b33f650b456be5 = L.circleMarker(
+                [29.37302303, -98.48150108],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_e1edb9c5ba3ebe470541e42809cc045e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_29ad48e5c4aa03c18e5180ce4b81285b = $(`<div id="html_29ad48e5c4aa03c18e5180ce4b81285b" style="width: 100.0%; height: 100.0%;"><b>Crash 20413497</b><br>Year: 2024<br>Road: E SOUTHCROSS BLVD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 27<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.373023<br>Longitude: -98.481501</div>`)[0];
+                popup_e1edb9c5ba3ebe470541e42809cc045e.setContent(html_29ad48e5c4aa03c18e5180ce4b81285b);
+            
+        
+
+        circle_marker_036619dd2003e74e42b33f650b456be5.bindPopup(popup_e1edb9c5ba3ebe470541e42809cc045e)
+        ;
+
+        
+    
+    
+            circle_marker_036619dd2003e74e42b33f650b456be5.bindTooltip(
+                `<div>
+                     2024 — Crash 20413497
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a247c703d4c807a86164082d2bafd5d = L.circleMarker(
+                [29.34466499, -98.50387231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_828931b22940f8040b119734d3aebd23 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_71ee1822007252814801c8fb8d42de38 = $(`<div id="html_71ee1822007252814801c8fb8d42de38" style="width: 100.0%; height: 100.0%;"><b>Crash 20439104</b><br>Year: 2024<br>Road: W AMBER<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 50<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.344665<br>Longitude: -98.503872</div>`)[0];
+                popup_828931b22940f8040b119734d3aebd23.setContent(html_71ee1822007252814801c8fb8d42de38);
+            
+        
+
+        circle_marker_6a247c703d4c807a86164082d2bafd5d.bindPopup(popup_828931b22940f8040b119734d3aebd23)
+        ;
+
+        
+    
+    
+            circle_marker_6a247c703d4c807a86164082d2bafd5d.bindTooltip(
+                `<div>
+                     2024 — Crash 20439104
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b180926222cea6c0d9e61b5185751fd0 = L.circleMarker(
+                [29.42646497, -98.48974231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_1b8343ae8ba1971c5021636135e981d9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_0376c559fac76c46c97c469fea010a13 = $(`<div id="html_0376c559fac76c46c97c469fea010a13" style="width: 100.0%; height: 100.0%;"><b>Crash 20467405</b><br>Year: 2024<br>Road: E HOUSTON ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 29<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.426465<br>Longitude: -98.489742</div>`)[0];
+                popup_1b8343ae8ba1971c5021636135e981d9.setContent(html_0376c559fac76c46c97c469fea010a13);
+            
+        
+
+        circle_marker_b180926222cea6c0d9e61b5185751fd0.bindPopup(popup_1b8343ae8ba1971c5021636135e981d9)
+        ;
+
+        
+    
+    
+            circle_marker_b180926222cea6c0d9e61b5185751fd0.bindTooltip(
+                `<div>
+                     2024 — Crash 20467405
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb7906a10b52d568ac316d92ffab8598 = L.circleMarker(
+                [29.39884952, -98.51311581],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_56e69297733f38a1b034d01c42248e60 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4855bb431331d62761aac30a1b1b27c2 = $(`<div id="html_4855bb431331d62761aac30a1b1b27c2" style="width: 100.0%; height: 100.0%;"><b>Crash 20479259</b><br>Year: 2024<br>Road: NOGALITOS ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 16<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 41 - FAULTY EVASIVE ACTION; 69 - WRONG SIDE - APPROACH OR INTERSECTION; No Data<br>Latitude: 29.398850<br>Longitude: -98.513116</div>`)[0];
+                popup_56e69297733f38a1b034d01c42248e60.setContent(html_4855bb431331d62761aac30a1b1b27c2);
+            
+        
+
+        circle_marker_eb7906a10b52d568ac316d92ffab8598.bindPopup(popup_56e69297733f38a1b034d01c42248e60)
+        ;
+
+        
+    
+    
+            circle_marker_eb7906a10b52d568ac316d92ffab8598.bindTooltip(
+                `<div>
+                     2024 — Crash 20479259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4a07019cd1a2f21d9f211be80e28dcf = L.circleMarker(
+                [29.42643497, -98.49315231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_ae91cee4f025f58cad4f24e4b1b61d94 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_567cc1d4b551b76f3ff349e8abcd65cf = $(`<div id="html_567cc1d4b551b76f3ff349e8abcd65cf" style="width: 100.0%; height: 100.0%;"><b>Crash 20492452</b><br>Year: 2024<br>Road: E HOUSTON ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 31<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; 27 - FAILED TO PASS TO RIGHT SAFELY; No Data<br>Latitude: 29.426435<br>Longitude: -98.493152</div>`)[0];
+                popup_ae91cee4f025f58cad4f24e4b1b61d94.setContent(html_567cc1d4b551b76f3ff349e8abcd65cf);
+            
+        
+
+        circle_marker_a4a07019cd1a2f21d9f211be80e28dcf.bindPopup(popup_ae91cee4f025f58cad4f24e4b1b61d94)
+        ;
+
+        
+    
+    
+            circle_marker_a4a07019cd1a2f21d9f211be80e28dcf.bindTooltip(
+                `<div>
+                     2024 — Crash 20492452
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88e5c2a7244394741eb364b86c74c1aa = L.circleMarker(
+                [29.47977418, -98.54125559],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_9d7ddf58c4c1de2b29a3979573bc5408 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a2032352d31f989889a01e0088e7f016 = $(`<div id="html_a2032352d31f989889a01e0088e7f016" style="width: 100.0%; height: 100.0%;"><b>Crash 20502122</b><br>Year: 2024<br>Road: FREDERICKSBURG RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 44<br>Victim gender: 1 - MALE<br>Helmet: 3 - WORN, NOT DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.479774<br>Longitude: -98.541256</div>`)[0];
+                popup_9d7ddf58c4c1de2b29a3979573bc5408.setContent(html_a2032352d31f989889a01e0088e7f016);
+            
+        
+
+        circle_marker_88e5c2a7244394741eb364b86c74c1aa.bindPopup(popup_9d7ddf58c4c1de2b29a3979573bc5408)
+        ;
+
+        
+    
+    
+            circle_marker_88e5c2a7244394741eb364b86c74c1aa.bindTooltip(
+                `<div>
+                     2024 — Crash 20502122
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bd2213e5ed0d889cd7ef55eef3ec00c = L.circleMarker(
+                [29.43980291, -98.52752969],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_ab79765cc9ede9d0bb26447bd2ea64dc = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_939b92795131aea17c4db6dbc9263176 = $(`<div id="html_939b92795131aea17c4db6dbc9263176" style="width: 100.0%; height: 100.0%;"><b>Crash 20504324</b><br>Year: 2024<br>Road: RIVAS ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 30<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.439803<br>Longitude: -98.527530</div>`)[0];
+                popup_ab79765cc9ede9d0bb26447bd2ea64dc.setContent(html_939b92795131aea17c4db6dbc9263176);
+            
+        
+
+        circle_marker_9bd2213e5ed0d889cd7ef55eef3ec00c.bindPopup(popup_ab79765cc9ede9d0bb26447bd2ea64dc)
+        ;
+
+        
+    
+    
+            circle_marker_9bd2213e5ed0d889cd7ef55eef3ec00c.bindTooltip(
+                `<div>
+                     2024 — Crash 20504324
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16dab30d900fdcdb24d3dde6895a4ea4 = L.circleMarker(
+                [29.34276701, -98.55330563],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_825af79aec0d6f5b508c515d890f18e1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_243dbb2561add98b655860a469ac8a33 = $(`<div id="html_243dbb2561add98b655860a469ac8a33" style="width: 100.0%; height: 100.0%;"><b>Crash 20558764</b><br>Year: 2024<br>Road: IH 35 S<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.342767<br>Longitude: -98.553306</div>`)[0];
+                popup_825af79aec0d6f5b508c515d890f18e1.setContent(html_243dbb2561add98b655860a469ac8a33);
+            
+        
+
+        circle_marker_16dab30d900fdcdb24d3dde6895a4ea4.bindPopup(popup_825af79aec0d6f5b508c515d890f18e1)
+        ;
+
+        
+    
+    
+            circle_marker_16dab30d900fdcdb24d3dde6895a4ea4.bindTooltip(
+                `<div>
+                     2024 — Crash 20558764
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d96a473feef2458dcfeb203c8d7d125e = L.circleMarker(
+                [29.49400496, -98.43505726],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_b0ce7e7d24263597e1099c1d6a820de0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_373b2f3e9d49e46bdcfea1689d34cca2 = $(`<div id="html_373b2f3e9d49e46bdcfea1689d34cca2" style="width: 100.0%; height: 100.0%;"><b>Crash 20559642</b><br>Year: 2024<br>Road: DEERWOOD DR<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 20<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 22 - FAILED TO CONTROL SPEED; No Data; No Data<br>Latitude: 29.494005<br>Longitude: -98.435057</div>`)[0];
+                popup_b0ce7e7d24263597e1099c1d6a820de0.setContent(html_373b2f3e9d49e46bdcfea1689d34cca2);
+            
+        
+
+        circle_marker_d96a473feef2458dcfeb203c8d7d125e.bindPopup(popup_b0ce7e7d24263597e1099c1d6a820de0)
+        ;
+
+        
+    
+    
+            circle_marker_d96a473feef2458dcfeb203c8d7d125e.bindTooltip(
+                `<div>
+                     2024 — Crash 20559642
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_389317ca9fb56fd09488d7706ab60d51 = L.circleMarker(
+                [29.42584497, -98.46563232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_db3fac09ad8ab695d6767fd40ae9d608 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6242829e833ee3126441f91224dfca1f = $(`<div id="html_6242829e833ee3126441f91224dfca1f" style="width: 100.0%; height: 100.0%;"><b>Crash 20560362</b><br>Year: 2024<br>Road: GULF ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.425845<br>Longitude: -98.465632</div>`)[0];
+                popup_db3fac09ad8ab695d6767fd40ae9d608.setContent(html_6242829e833ee3126441f91224dfca1f);
+            
+        
+
+        circle_marker_389317ca9fb56fd09488d7706ab60d51.bindPopup(popup_db3fac09ad8ab695d6767fd40ae9d608)
+        ;
+
+        
+    
+    
+            circle_marker_389317ca9fb56fd09488d7706ab60d51.bindTooltip(
+                `<div>
+                     2024 — Crash 20560362
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e317580b56835eaa66973a3d5671eb78 = L.circleMarker(
+                [29.55903494, -98.46150232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_98e786b2d4b5ca70349d8bda186f9179 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c80f743e4cd8320b9afb5e3cb6ab62b9 = $(`<div id="html_c80f743e4cd8320b9afb5e3cb6ab62b9" style="width: 100.0%; height: 100.0%;"><b>Crash 20580237</b><br>Year: 2024<br>Road: JONES MALTSBERGER RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.559035<br>Longitude: -98.461502</div>`)[0];
+                popup_98e786b2d4b5ca70349d8bda186f9179.setContent(html_c80f743e4cd8320b9afb5e3cb6ab62b9);
+            
+        
+
+        circle_marker_e317580b56835eaa66973a3d5671eb78.bindPopup(popup_98e786b2d4b5ca70349d8bda186f9179)
+        ;
+
+        
+    
+    
+            circle_marker_e317580b56835eaa66973a3d5671eb78.bindTooltip(
+                `<div>
+                     2024 — Crash 20580237
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91289d669a73e576659e08745d4cea50 = L.circleMarker(
+                [29.31085991, -98.4742475],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_183c0b71a453892c8d29c18a1345d0a3 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e2f89cd04f5d8e6c3837e2adfc18a963 = $(`<div id="html_e2f89cd04f5d8e6c3837e2adfc18a963" style="width: 100.0%; height: 100.0%;"><b>Crash 20606789</b><br>Year: 2025<br>Road: ROOSEVELT AVE<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 35<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 27 - FAILED TO PASS TO RIGHT SAFELY; No Data; No Data<br>Latitude: 29.310860<br>Longitude: -98.474248</div>`)[0];
+                popup_183c0b71a453892c8d29c18a1345d0a3.setContent(html_e2f89cd04f5d8e6c3837e2adfc18a963);
+            
+        
+
+        circle_marker_91289d669a73e576659e08745d4cea50.bindPopup(popup_183c0b71a453892c8d29c18a1345d0a3)
+        ;
+
+        
+    
+    
+            circle_marker_91289d669a73e576659e08745d4cea50.bindTooltip(
+                `<div>
+                     2025 — Crash 20606789
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae6288802550b5e5a305e95f91e47b65 = L.circleMarker(
+                [29.43149343, -98.56097534],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_0fdd0bd759906ebecbca844577293305 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_296ad8ceeb266dd0c08503c12effabd9 = $(`<div id="html_296ad8ceeb266dd0c08503c12effabd9" style="width: 100.0%; height: 100.0%;"><b>Crash 20634686</b><br>Year: 2025<br>Road: W COMMERCE ST<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 36<br>Victim gender: 2 - FEMALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.431493<br>Longitude: -98.560975</div>`)[0];
+                popup_0fdd0bd759906ebecbca844577293305.setContent(html_296ad8ceeb266dd0c08503c12effabd9);
+            
+        
+
+        circle_marker_ae6288802550b5e5a305e95f91e47b65.bindPopup(popup_0fdd0bd759906ebecbca844577293305)
+        ;
+
+        
+    
+    
+            circle_marker_ae6288802550b5e5a305e95f91e47b65.bindTooltip(
+                `<div>
+                     2025 — Crash 20634686
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb79e4a8b22610483059e020d5c1249c = L.circleMarker(
+                [29.49735581, -98.34922439],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_f31618c9777f537633dc1b496f8c7993 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e406e6c7ddbec08f1ac1356f3f9e20bf = $(`<div id="html_e406e6c7ddbec08f1ac1356f3f9e20bf" style="width: 100.0%; height: 100.0%;"><b>Crash 20676091</b><br>Year: 2025<br>Road: WALZEM RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 32<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.497356<br>Longitude: -98.349224</div>`)[0];
+                popup_f31618c9777f537633dc1b496f8c7993.setContent(html_e406e6c7ddbec08f1ac1356f3f9e20bf);
+            
+        
+
+        circle_marker_eb79e4a8b22610483059e020d5c1249c.bindPopup(popup_f31618c9777f537633dc1b496f8c7993)
+        ;
+
+        
+    
+    
+            circle_marker_eb79e4a8b22610483059e020d5c1249c.bindTooltip(
+                `<div>
+                     2025 — Crash 20676091
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae50569b00d295022717dd2764167363 = L.circleMarker(
+                [29.49655495, -98.38905701],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_5eee4fc4ffb7bc6ae78698bd8d992e0b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1b213524dd4282529043d035a9bc9ee9 = $(`<div id="html_1b213524dd4282529043d035a9bc9ee9" style="width: 100.0%; height: 100.0%;"><b>Crash 20684528</b><br>Year: 2025<br>Road: EISENHAUER RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 15<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.496555<br>Longitude: -98.389057</div>`)[0];
+                popup_5eee4fc4ffb7bc6ae78698bd8d992e0b.setContent(html_1b213524dd4282529043d035a9bc9ee9);
+            
+        
+
+        circle_marker_ae50569b00d295022717dd2764167363.bindPopup(popup_5eee4fc4ffb7bc6ae78698bd8d992e0b)
+        ;
+
+        
+    
+    
+            circle_marker_ae50569b00d295022717dd2764167363.bindTooltip(
+                `<div>
+                     2025 — Crash 20684528
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92fa7810a63b208cc20a37fdd8dac05f = L.circleMarker(
+                [29.42989497, -98.5658323],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_4249d054818fd0a21b8e84b6aa35d7da = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a4fc3213d1bf053e0bec6411448eab2c = $(`<div id="html_a4fc3213d1bf053e0bec6411448eab2c" style="width: 100.0%; height: 100.0%;"><b>Crash 20709191</b><br>Year: 2025<br>Road: HISTORIC OLD HWY 90<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.429895<br>Longitude: -98.565832</div>`)[0];
+                popup_4249d054818fd0a21b8e84b6aa35d7da.setContent(html_a4fc3213d1bf053e0bec6411448eab2c);
+            
+        
+
+        circle_marker_92fa7810a63b208cc20a37fdd8dac05f.bindPopup(popup_4249d054818fd0a21b8e84b6aa35d7da)
+        ;
+
+        
+    
+    
+            circle_marker_92fa7810a63b208cc20a37fdd8dac05f.bindTooltip(
+                `<div>
+                     2025 — Crash 20709191
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cdc26ec4e3a42363dd187edee03954a2 = L.circleMarker(
+                [29.48565497, -98.59377229],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_1cb9fc7fce8689dfae28bd3ef3591bee = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_79a25ade9a747ddf543a6cf86a840166 = $(`<div id="html_79a25ade9a747ddf543a6cf86a840166" style="width: 100.0%; height: 100.0%;"><b>Crash 20712851</b><br>Year: 2025<br>Road: EVERS RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.485655<br>Longitude: -98.593772</div>`)[0];
+                popup_1cb9fc7fce8689dfae28bd3ef3591bee.setContent(html_79a25ade9a747ddf543a6cf86a840166);
+            
+        
+
+        circle_marker_cdc26ec4e3a42363dd187edee03954a2.bindPopup(popup_1cb9fc7fce8689dfae28bd3ef3591bee)
+        ;
+
+        
+    
+    
+            circle_marker_cdc26ec4e3a42363dd187edee03954a2.bindTooltip(
+                `<div>
+                     2025 — Crash 20712851
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_840971ee61caa54cae91366fe3b8b7d1 = L.circleMarker(
+                [29.55519135, -98.38255314],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_1c78a3cac52149ee37b74cd415a9af50 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9775ffd7db6c04aed1bfbca058bf9905 = $(`<div id="html_9775ffd7db6c04aed1bfbca058bf9905" style="width: 100.0%; height: 100.0%;"><b>Crash 20735073</b><br>Year: 2025<br>Road: Oconnor Rd<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 59<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.555191<br>Longitude: -98.382553</div>`)[0];
+                popup_1c78a3cac52149ee37b74cd415a9af50.setContent(html_9775ffd7db6c04aed1bfbca058bf9905);
+            
+        
+
+        circle_marker_840971ee61caa54cae91366fe3b8b7d1.bindPopup(popup_1c78a3cac52149ee37b74cd415a9af50)
+        ;
+
+        
+    
+    
+            circle_marker_840971ee61caa54cae91366fe3b8b7d1.bindTooltip(
+                `<div>
+                     2025 — Crash 20735073
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fbc06f0129f687d96752242ee4d2b93 = L.circleMarker(
+                [29.43018497, -98.47326232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_f99d83b7c0164cc312804a3f01d191c5 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_da026fbb18ab3185fd417eda04784066 = $(`<div id="html_da026fbb18ab3185fd417eda04784066" style="width: 100.0%; height: 100.0%;"><b>Crash 20750252</b><br>Year: 2025<br>Road: HAYS ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 29<br>Victim gender: 1 - MALE<br>Helmet: 3 - WORN, NOT DAMAGED<br>Recorded contributing factors: 16 - DISREGARD STOP SIGN OR LIGHT; 22 - FAILED TO CONTROL SPEED; No Data<br>Latitude: 29.430185<br>Longitude: -98.473262</div>`)[0];
+                popup_f99d83b7c0164cc312804a3f01d191c5.setContent(html_da026fbb18ab3185fd417eda04784066);
+            
+        
+
+        circle_marker_9fbc06f0129f687d96752242ee4d2b93.bindPopup(popup_f99d83b7c0164cc312804a3f01d191c5)
+        ;
+
+        
+    
+    
+            circle_marker_9fbc06f0129f687d96752242ee4d2b93.bindTooltip(
+                `<div>
+                     2025 — Crash 20750252
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_267bb40fc5f73aa2f0422b82023baaf7 = L.circleMarker(
+                [29.35671904, -98.48670972],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_16c1e8e87b788a3db11dbf8209dbdc9e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d94468d21f6cee3744178d0c03849ff0 = $(`<div id="html_d94468d21f6cee3744178d0c03849ff0" style="width: 100.0%; height: 100.0%;"><b>Crash 20805389</b><br>Year: 2025<br>Road: SE MILITARY DR<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 33 - FAILED TO YIELD RIGHT OF WAY - OPEN INTERSECTION; 22 - FAILED TO CONTROL SPEED; No Data<br>Latitude: 29.356719<br>Longitude: -98.486710</div>`)[0];
+                popup_16c1e8e87b788a3db11dbf8209dbdc9e.setContent(html_d94468d21f6cee3744178d0c03849ff0);
+            
+        
+
+        circle_marker_267bb40fc5f73aa2f0422b82023baaf7.bindPopup(popup_16c1e8e87b788a3db11dbf8209dbdc9e)
+        ;
+
+        
+    
+    
+            circle_marker_267bb40fc5f73aa2f0422b82023baaf7.bindTooltip(
+                `<div>
+                     2025 — Crash 20805389
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aaacb09b367e5771ff486bdd2ba02cfb = L.circleMarker(
+                [29.43183804, -98.47969395],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_16490b9a33e0aad793fcf195cdb315cd = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_47fbfaea8b91be2aa15e1ecab7437537 = $(`<div id="html_47fbfaea8b91be2aa15e1ecab7437537" style="width: 100.0%; height: 100.0%;"><b>Crash 20869086</b><br>Year: 2025<br>Road: 9TH ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 66<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.431838<br>Longitude: -98.479694</div>`)[0];
+                popup_16490b9a33e0aad793fcf195cdb315cd.setContent(html_47fbfaea8b91be2aa15e1ecab7437537);
+            
+        
+
+        circle_marker_aaacb09b367e5771ff486bdd2ba02cfb.bindPopup(popup_16490b9a33e0aad793fcf195cdb315cd)
+        ;
+
+        
+    
+    
+            circle_marker_aaacb09b367e5771ff486bdd2ba02cfb.bindTooltip(
+                `<div>
+                     2025 — Crash 20869086
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3aee16f1dc87f3f206a3b0fa5b738591 = L.circleMarker(
+                [29.40197626, -98.40543973],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_1a0fd169360bc4576d5c08b4162d5f76 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_959203766f7cd48c19b078ccae01ab79 = $(`<div id="html_959203766f7cd48c19b078ccae01ab79" style="width: 100.0%; height: 100.0%;"><b>Crash 20917180</b><br>Year: 2025<br>Road: S WW WHITE RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 19<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.401976<br>Longitude: -98.405440</div>`)[0];
+                popup_1a0fd169360bc4576d5c08b4162d5f76.setContent(html_959203766f7cd48c19b078ccae01ab79);
+            
+        
+
+        circle_marker_3aee16f1dc87f3f206a3b0fa5b738591.bindPopup(popup_1a0fd169360bc4576d5c08b4162d5f76)
+        ;
+
+        
+    
+    
+            circle_marker_3aee16f1dc87f3f206a3b0fa5b738591.bindTooltip(
+                `<div>
+                     2025 — Crash 20917180
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ba0539876134e247a96ea205d5ae14a = L.circleMarker(
+                [29.35589232, -98.56267756],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_99d63bb1481fe74511e084e4fa2f4af9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c7d26c7ff9eabf450825c78012a1b9bc = $(`<div id="html_c7d26c7ff9eabf450825c78012a1b9bc" style="width: 100.0%; height: 100.0%;"><b>Crash 21003710</b><br>Year: 2025<br>Road: NEW LAREDO HWY<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 55<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.355892<br>Longitude: -98.562678</div>`)[0];
+                popup_99d63bb1481fe74511e084e4fa2f4af9.setContent(html_c7d26c7ff9eabf450825c78012a1b9bc);
+            
+        
+
+        circle_marker_5ba0539876134e247a96ea205d5ae14a.bindPopup(popup_99d63bb1481fe74511e084e4fa2f4af9)
+        ;
+
+        
+    
+    
+            circle_marker_5ba0539876134e247a96ea205d5ae14a.bindTooltip(
+                `<div>
+                     2025 — Crash 21003710
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_688e2e3a6b3a6edcbd3b88a308b41ce7 = L.circleMarker(
+                [29.55554836, -98.40636892],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_3617166d9049d27ef896fc3a5b968fdf = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2b13d453e55d54f7c2cb81ca9681e19d = $(`<div id="html_2b13d453e55d54f7c2cb81ca9681e19d" style="width: 100.0%; height: 100.0%;"><b>Crash 21021506</b><br>Year: 2025<br>Road: UHR LN<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 10<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 33 - FAILED TO YIELD RIGHT OF WAY - OPEN INTERSECTION; No Data; No Data<br>Latitude: 29.555548<br>Longitude: -98.406369</div>`)[0];
+                popup_3617166d9049d27ef896fc3a5b968fdf.setContent(html_2b13d453e55d54f7c2cb81ca9681e19d);
+            
+        
+
+        circle_marker_688e2e3a6b3a6edcbd3b88a308b41ce7.bindPopup(popup_3617166d9049d27ef896fc3a5b968fdf)
+        ;
+
+        
+    
+    
+            circle_marker_688e2e3a6b3a6edcbd3b88a308b41ce7.bindTooltip(
+                `<div>
+                     2025 — Crash 21021506
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31b9c11b6428bd1ea501ae14fb3a54e3 = L.circleMarker(
+                [29.44064497, -98.49298231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_92fefa731d8cb38c5c83999a6d1c6c90 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3a6d24cd408e31fc455423d4ca1e3a05 = $(`<div id="html_3a6d24cd408e31fc455423d4ca1e3a05" style="width: 100.0%; height: 100.0%;"><b>Crash 21060036</b><br>Year: 2025<br>Road: E CYPRESS<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.440645<br>Longitude: -98.492982</div>`)[0];
+                popup_92fefa731d8cb38c5c83999a6d1c6c90.setContent(html_3a6d24cd408e31fc455423d4ca1e3a05);
+            
+        
+
+        circle_marker_31b9c11b6428bd1ea501ae14fb3a54e3.bindPopup(popup_92fefa731d8cb38c5c83999a6d1c6c90)
+        ;
+
+        
+    
+    
+            circle_marker_31b9c11b6428bd1ea501ae14fb3a54e3.bindTooltip(
+                `<div>
+                     2025 — Crash 21060036
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8821ca4afb9faaa2915b3ed55462800 = L.circleMarker(
+                [29.39352848, -98.36478876],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_56a43cb7aa7f96208c614ee70077f5ce = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_de848bc555861146b0a287e0d04b1636 = $(`<div id="html_de848bc555861146b0a287e0d04b1636" style="width: 100.0%; height: 100.0%;"><b>Crash 21104484</b><br>Year: 2025<br>Road: US HWY 87 E<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 48<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.393528<br>Longitude: -98.364789</div>`)[0];
+                popup_56a43cb7aa7f96208c614ee70077f5ce.setContent(html_de848bc555861146b0a287e0d04b1636);
+            
+        
+
+        circle_marker_b8821ca4afb9faaa2915b3ed55462800.bindPopup(popup_56a43cb7aa7f96208c614ee70077f5ce)
+        ;
+
+        
+    
+    
+            circle_marker_b8821ca4afb9faaa2915b3ed55462800.bindTooltip(
+                `<div>
+                     2025 — Crash 21104484
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ca582b987f253196419d437057cb132 = L.circleMarker(
+                [29.57241495, -98.61738228],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_e90222c9ecb5539f1a90d6e38bfb6049 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a2dab4427461f9433ac9700c5d3bf81f = $(`<div id="html_a2dab4427461f9433ac9700c5d3bf81f" style="width: 100.0%; height: 100.0%;"><b>Crash 21113355</b><br>Year: 2025<br>Road: W HAUSMAN RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 19<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 69 - WRONG SIDE - APPROACH OR INTERSECTION; No Data; No Data<br>Latitude: 29.572415<br>Longitude: -98.617382</div>`)[0];
+                popup_e90222c9ecb5539f1a90d6e38bfb6049.setContent(html_a2dab4427461f9433ac9700c5d3bf81f);
+            
+        
+
+        circle_marker_0ca582b987f253196419d437057cb132.bindPopup(popup_e90222c9ecb5539f1a90d6e38bfb6049)
+        ;
+
+        
+    
+    
+            circle_marker_0ca582b987f253196419d437057cb132.bindTooltip(
+                `<div>
+                     2025 — Crash 21113355
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a0a4033978fa5414f79932592bd061f = L.circleMarker(
+                [29.42347391, -98.38914769],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_b9ac4c94a0ca54e7baa92a1ceaa1e319 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a694d8c72627462900c05d90b8060e35 = $(`<div id="html_a694d8c72627462900c05d90b8060e35" style="width: 100.0%; height: 100.0%;"><b>Crash 21125390</b><br>Year: 2025<br>Road: NE LOOP 410<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 37<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.423474<br>Longitude: -98.389148</div>`)[0];
+                popup_b9ac4c94a0ca54e7baa92a1ceaa1e319.setContent(html_a694d8c72627462900c05d90b8060e35);
+            
+        
+
+        circle_marker_5a0a4033978fa5414f79932592bd061f.bindPopup(popup_b9ac4c94a0ca54e7baa92a1ceaa1e319)
+        ;
+
+        
+    
+    
+            circle_marker_5a0a4033978fa5414f79932592bd061f.bindTooltip(
+                `<div>
+                     2025 — Crash 21125390
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e9b763e52bba6c83275abb2d8175107 = L.circleMarker(
+                [29.35116227, -98.4886296],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_19323c44f4265a1396bdd2d5da72472b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a4db9e60d1c5c41f31b865a136f3074d = $(`<div id="html_a4db9e60d1c5c41f31b865a136f3074d" style="width: 100.0%; height: 100.0%;"><b>Crash 21180050</b><br>Year: 2025<br>Road: S FLORES ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 43<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.351162<br>Longitude: -98.488630</div>`)[0];
+                popup_19323c44f4265a1396bdd2d5da72472b.setContent(html_a4db9e60d1c5c41f31b865a136f3074d);
+            
+        
+
+        circle_marker_6e9b763e52bba6c83275abb2d8175107.bindPopup(popup_19323c44f4265a1396bdd2d5da72472b)
+        ;
+
+        
+    
+    
+            circle_marker_6e9b763e52bba6c83275abb2d8175107.bindTooltip(
+                `<div>
+                     2025 — Crash 21180050
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69d1a20b6849cc1f47699f7e1bcbf4a4 = L.circleMarker(
+                [29.39891498, -98.52815231],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_c600b914c89bedad6c51543e743a204f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f137765a55f3fa497ec5e7988bfbb5aa = $(`<div id="html_f137765a55f3fa497ec5e7988bfbb5aa" style="width: 100.0%; height: 100.0%;"><b>Crash 21197540</b><br>Year: 2025<br>Road: FRIO CITY RD<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 48<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 66 - TURNED WHEN UNSAFE; No Data; No Data<br>Latitude: 29.398915<br>Longitude: -98.528152</div>`)[0];
+                popup_c600b914c89bedad6c51543e743a204f.setContent(html_f137765a55f3fa497ec5e7988bfbb5aa);
+            
+        
+
+        circle_marker_69d1a20b6849cc1f47699f7e1bcbf4a4.bindPopup(popup_c600b914c89bedad6c51543e743a204f)
+        ;
+
+        
+    
+    
+            circle_marker_69d1a20b6849cc1f47699f7e1bcbf4a4.bindTooltip(
+                `<div>
+                     2025 — Crash 21197540
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57a6328cd1cc9216921c6290457f6353 = L.circleMarker(
+                [29.50802073, -98.36986914],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_74317b6a2501e23f5776b48405243d25 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_960628a7751574b23d91c8b43d3384ec = $(`<div id="html_960628a7751574b23d91c8b43d3384ec" style="width: 100.0%; height: 100.0%;"><b>Crash 21206071</b><br>Year: 2025<br>Road: WALZEM RD<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 50<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.508021<br>Longitude: -98.369869</div>`)[0];
+                popup_74317b6a2501e23f5776b48405243d25.setContent(html_960628a7751574b23d91c8b43d3384ec);
+            
+        
+
+        circle_marker_57a6328cd1cc9216921c6290457f6353.bindPopup(popup_74317b6a2501e23f5776b48405243d25)
+        ;
+
+        
+    
+    
+            circle_marker_57a6328cd1cc9216921c6290457f6353.bindTooltip(
+                `<div>
+                     2025 — Crash 21206071
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63cd21c73cd082b80800582f352d265f = L.circleMarker(
+                [29.54537973, -98.38366251],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_3ee15ba6c1c3a7ad38ae26ded4afb001 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_250f06ff40f4459cf7303fe5e2fb06a2 = $(`<div id="html_250f06ff40f4459cf7303fe5e2fb06a2" style="width: 100.0%; height: 100.0%;"><b>Crash 21261878</b><br>Year: 2026<br>Road: WURZBACH PKWY<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.545380<br>Longitude: -98.383663</div>`)[0];
+                popup_3ee15ba6c1c3a7ad38ae26ded4afb001.setContent(html_250f06ff40f4459cf7303fe5e2fb06a2);
+            
+        
+
+        circle_marker_63cd21c73cd082b80800582f352d265f.bindPopup(popup_3ee15ba6c1c3a7ad38ae26ded4afb001)
+        ;
+
+        
+    
+    
+            circle_marker_63cd21c73cd082b80800582f352d265f.bindTooltip(
+                `<div>
+                     2026 — Crash 21261878
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65c4836a68094b7b2b70f0e99bf3e2ec = L.circleMarker(
+                [29.36660498, -98.5514723],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_81cc064b8b68bb89fc2eaf7b2863e11a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2cf9c06dbf43b49af250273c9eb46f39 = $(`<div id="html_2cf9c06dbf43b49af250273c9eb46f39" style="width: 100.0%; height: 100.0%;"><b>Crash 21262641</b><br>Year: 2026<br>Road: W GERALD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 27<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.366605<br>Longitude: -98.551472</div>`)[0];
+                popup_81cc064b8b68bb89fc2eaf7b2863e11a.setContent(html_2cf9c06dbf43b49af250273c9eb46f39);
+            
+        
+
+        circle_marker_65c4836a68094b7b2b70f0e99bf3e2ec.bindPopup(popup_81cc064b8b68bb89fc2eaf7b2863e11a)
+        ;
+
+        
+    
+    
+            circle_marker_65c4836a68094b7b2b70f0e99bf3e2ec.bindTooltip(
+                `<div>
+                     2026 — Crash 21262641
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72da802847d60a8ef3478a0849f26092 = L.circleMarker(
+                [29.45573497, -98.5327723],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_f3b950198ab62e30973492eacedb56f0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f85408a755b7d9add44b98f868846a51 = $(`<div id="html_f85408a755b7d9add44b98f868846a51" style="width: 100.0%; height: 100.0%;"><b>Crash 21271110</b><br>Year: 2026<br>Road: W MISTLETOE<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 2 - WORN, DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.455735<br>Longitude: -98.532772</div>`)[0];
+                popup_f3b950198ab62e30973492eacedb56f0.setContent(html_f85408a755b7d9add44b98f868846a51);
+            
+        
+
+        circle_marker_72da802847d60a8ef3478a0849f26092.bindPopup(popup_f3b950198ab62e30973492eacedb56f0)
+        ;
+
+        
+    
+    
+            circle_marker_72da802847d60a8ef3478a0849f26092.bindTooltip(
+                `<div>
+                     2026 — Crash 21271110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_532d3257f74d656b5982ed818c325887 = L.circleMarker(
+                [29.44777273, -98.42813252],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_0caede2286cb2287ce2e2ea0484f5ed1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e0057557c4a02e791f0ad37904345814 = $(`<div id="html_e0057557c4a02e791f0ad37904345814" style="width: 100.0%; height: 100.0%;"><b>Crash 21298533</b><br>Year: 2026<br>Road: IH 35 N ACCESS RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 21<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.447773<br>Longitude: -98.428133</div>`)[0];
+                popup_0caede2286cb2287ce2e2ea0484f5ed1.setContent(html_e0057557c4a02e791f0ad37904345814);
+            
+        
+
+        circle_marker_532d3257f74d656b5982ed818c325887.bindPopup(popup_0caede2286cb2287ce2e2ea0484f5ed1)
+        ;
+
+        
+    
+    
+            circle_marker_532d3257f74d656b5982ed818c325887.bindTooltip(
+                `<div>
+                     2026 — Crash 21298533
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f54d9b98e03d49b951250e99240bf1e5 = L.circleMarker(
+                [29.46633497, -98.60250228],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_281e2b39014089d7b7485247da800fb8 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_00b333d4432a0b833ffa3fcbca20cd58 = $(`<div id="html_00b333d4432a0b833ffa3fcbca20cd58" style="width: 100.0%; height: 100.0%;"><b>Crash 21352841</b><br>Year: 2026<br>Road: INGRAM RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 55<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.466335<br>Longitude: -98.602502</div>`)[0];
+                popup_281e2b39014089d7b7485247da800fb8.setContent(html_00b333d4432a0b833ffa3fcbca20cd58);
+            
+        
+
+        circle_marker_f54d9b98e03d49b951250e99240bf1e5.bindPopup(popup_281e2b39014089d7b7485247da800fb8)
+        ;
+
+        
+    
+    
+            circle_marker_f54d9b98e03d49b951250e99240bf1e5.bindTooltip(
+                `<div>
+                     2026 — Crash 21352841
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e251ceceb15cb0ba9bb8ddd35dc6910f = L.circleMarker(
+                [29.40936597, -98.49632716],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_83c875e411efe7c4b1170f946cb06cab = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e5b42527b52c95a4a707d136b6da2f37 = $(`<div id="html_e5b42527b52c95a4a707d136b6da2f37" style="width: 100.0%; height: 100.0%;"><b>Crash 21369195</b><br>Year: 2025<br>Road: PROBANDT ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 24<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.409366<br>Longitude: -98.496327</div>`)[0];
+                popup_83c875e411efe7c4b1170f946cb06cab.setContent(html_e5b42527b52c95a4a707d136b6da2f37);
+            
+        
+
+        circle_marker_e251ceceb15cb0ba9bb8ddd35dc6910f.bindPopup(popup_83c875e411efe7c4b1170f946cb06cab)
+        ;
+
+        
+    
+    
+            circle_marker_e251ceceb15cb0ba9bb8ddd35dc6910f.bindTooltip(
+                `<div>
+                     2025 — Crash 21369195
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45b23ed7329b9b8af5d13cfb75f81c5e = L.circleMarker(
+                [29.40583635, -98.50959436],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_e3f02878e9f56eb10e589fd2d80c74c6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_16208b2581e67d2254dcf5b19244210f = $(`<div id="html_16208b2581e67d2254dcf5b19244210f" style="width: 100.0%; height: 100.0%;"><b>Crash 21395671</b><br>Year: 2026<br>Road: FURNISH<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 47<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.405836<br>Longitude: -98.509594</div>`)[0];
+                popup_e3f02878e9f56eb10e589fd2d80c74c6.setContent(html_16208b2581e67d2254dcf5b19244210f);
+            
+        
+
+        circle_marker_45b23ed7329b9b8af5d13cfb75f81c5e.bindPopup(popup_e3f02878e9f56eb10e589fd2d80c74c6)
+        ;
+
+        
+    
+    
+            circle_marker_45b23ed7329b9b8af5d13cfb75f81c5e.bindTooltip(
+                `<div>
+                     2026 — Crash 21395671
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab8849d2baa9a5b16fd5751886445823 = L.circleMarker(
+                [29.42693497, -98.52582231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_ba705d6ad31b9c491cbfbdd0113f39ba = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_54bf17f90db63e2f5ebd4c0c1dce4b25 = $(`<div id="html_54bf17f90db63e2f5ebd4c0c1dce4b25" style="width: 100.0%; height: 100.0%;"><b>Crash 21411305</b><br>Year: 2026<br>Road: S ROSILLO<br>Outcome: 0 death(s), 2 serious injury/ies<br>Victim age: 23; 24<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.426935<br>Longitude: -98.525822</div>`)[0];
+                popup_ba705d6ad31b9c491cbfbdd0113f39ba.setContent(html_54bf17f90db63e2f5ebd4c0c1dce4b25);
+            
+        
+
+        circle_marker_ab8849d2baa9a5b16fd5751886445823.bindPopup(popup_ba705d6ad31b9c491cbfbdd0113f39ba)
+        ;
+
+        
+    
+    
+            circle_marker_ab8849d2baa9a5b16fd5751886445823.bindTooltip(
+                `<div>
+                     2026 — Crash 21411305
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4233fc2022e22e8f1bdc2a9d2740547a = L.circleMarker(
+                [29.41296526, -98.43180267],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_2d184a27d0ecda3cf75a0d7f8e6d1df1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3fda5f1614e88da010a34739b341a1ae = $(`<div id="html_3fda5f1614e88da010a34739b341a1ae" style="width: 100.0%; height: 100.0%;"><b>Crash 21414702</b><br>Year: 2026<br>Road: IH 10 E<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 66<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 37 - FAILED TO YIELD RIGHT OF WAY - TURNING LEFT; No Data; No Data<br>Latitude: 29.412965<br>Longitude: -98.431803</div>`)[0];
+                popup_2d184a27d0ecda3cf75a0d7f8e6d1df1.setContent(html_3fda5f1614e88da010a34739b341a1ae);
+            
+        
+
+        circle_marker_4233fc2022e22e8f1bdc2a9d2740547a.bindPopup(popup_2d184a27d0ecda3cf75a0d7f8e6d1df1)
+        ;
+
+        
+    
+    
+            circle_marker_4233fc2022e22e8f1bdc2a9d2740547a.bindTooltip(
+                `<div>
+                     2026 — Crash 21414702
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22c8523858e7c306fea2a3fdaa0bfc7e = L.circleMarker(
+                [29.41707498, -98.5632623],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_fe03c8402718653fe277a8585c57043c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a7431bc1443f70dee70313da992d6734 = $(`<div id="html_a7431bc1443f70dee70313da992d6734" style="width: 100.0%; height: 100.0%;"><b>Crash 21437935</b><br>Year: 2026<br>Road: ROMERO<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.417075<br>Longitude: -98.563262</div>`)[0];
+                popup_fe03c8402718653fe277a8585c57043c.setContent(html_a7431bc1443f70dee70313da992d6734);
+            
+        
+
+        circle_marker_22c8523858e7c306fea2a3fdaa0bfc7e.bindPopup(popup_fe03c8402718653fe277a8585c57043c)
+        ;
+
+        
+    
+    
+            circle_marker_22c8523858e7c306fea2a3fdaa0bfc7e.bindTooltip(
+                `<div>
+                     2026 — Crash 21437935
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10232125b07ed8374f4d3a6756e671bd = L.circleMarker(
+                [29.45132497, -98.48610231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_cf430c385548c3f86629d3b419c0fcc8 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_bb451adca19018366282890335e73b61 = $(`<div id="html_bb451adca19018366282890335e73b61" style="width: 100.0%; height: 100.0%;"><b>Crash 21446395</b><br>Year: 2026<br>Road: N ST MARYS<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 22<br>Victim gender: 1 - MALE<br>Helmet: 3 - WORN, NOT DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.451325<br>Longitude: -98.486102</div>`)[0];
+                popup_cf430c385548c3f86629d3b419c0fcc8.setContent(html_bb451adca19018366282890335e73b61);
+            
+        
+
+        circle_marker_10232125b07ed8374f4d3a6756e671bd.bindPopup(popup_cf430c385548c3f86629d3b419c0fcc8)
+        ;
+
+        
+    
+    
+            circle_marker_10232125b07ed8374f4d3a6756e671bd.bindTooltip(
+                `<div>
+                     2026 — Crash 21446395
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_691fa108b8bbd7aa3eba12e337ab85c9 = L.circleMarker(
+                [29.39453232, -98.43647233],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_fe1e02a7de54131466fba1091e147f6b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_cb430cd049ba5a8b183efc276f7d7fa6 = $(`<div id="html_cb430cd049ba5a8b183efc276f7d7fa6" style="width: 100.0%; height: 100.0%;"><b>Crash 21459853</b><br>Year: 2026<br>Road: AMANDA<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 3<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.394532<br>Longitude: -98.436472</div>`)[0];
+                popup_fe1e02a7de54131466fba1091e147f6b.setContent(html_cb430cd049ba5a8b183efc276f7d7fa6);
+            
+        
+
+        circle_marker_691fa108b8bbd7aa3eba12e337ab85c9.bindPopup(popup_fe1e02a7de54131466fba1091e147f6b)
+        ;
+
+        
+    
+    
+            circle_marker_691fa108b8bbd7aa3eba12e337ab85c9.bindTooltip(
+                `<div>
+                     2026 — Crash 21459853
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7baa29778ac54f07949094aeec3169d7 = L.circleMarker(
+                [29.36048498, -98.49255232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_0defd6f4f0d13745252d9705501007ae = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8965c9b06ca14f1d45724681a046993a = $(`<div id="html_8965c9b06ca14f1d45724681a046993a" style="width: 100.0%; height: 100.0%;"><b>Crash 21465558</b><br>Year: 2026<br>Road: S FLORES ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 51<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 16 - DISREGARD STOP SIGN OR LIGHT; No Data; No Data<br>Latitude: 29.360485<br>Longitude: -98.492552</div>`)[0];
+                popup_0defd6f4f0d13745252d9705501007ae.setContent(html_8965c9b06ca14f1d45724681a046993a);
+            
+        
+
+        circle_marker_7baa29778ac54f07949094aeec3169d7.bindPopup(popup_0defd6f4f0d13745252d9705501007ae)
+        ;
+
+        
+    
+    
+            circle_marker_7baa29778ac54f07949094aeec3169d7.bindTooltip(
+                `<div>
+                     2026 — Crash 21465558
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fca5a80ac96cbe42b93e6eea19abc277 = L.circleMarker(
+                [29.44402497, -98.47394232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_45a98521caafbff71ad863011349aad1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_db0fac2dc38e0fcb943dacd9862ec3dc = $(`<div id="html_db0fac2dc38e0fcb943dacd9862ec3dc" style="width: 100.0%; height: 100.0%;"><b>Crash 21479841</b><br>Year: 2026<br>Road: E JOSEPHINE ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 40<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.444025<br>Longitude: -98.473942</div>`)[0];
+                popup_45a98521caafbff71ad863011349aad1.setContent(html_db0fac2dc38e0fcb943dacd9862ec3dc);
+            
+        
+
+        circle_marker_fca5a80ac96cbe42b93e6eea19abc277.bindPopup(popup_45a98521caafbff71ad863011349aad1)
+        ;
+
+        
+    
+    
+            circle_marker_fca5a80ac96cbe42b93e6eea19abc277.bindTooltip(
+                `<div>
+                     2026 — Crash 21479841
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e93110ce0f79aaee82568bf032ce7de = L.circleMarker(
+                [29.38880528, -98.52187189],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_86b918594a56e648067718e14332df39 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_92b6ba096d519243ada83e81f31d9670 = $(`<div id="html_92b6ba096d519243ada83e81f31d9670" style="width: 100.0%; height: 100.0%;"><b>Crash 21509355</b><br>Year: 2026<br>Road: NOGALITOS ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 66<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 69 - WRONG SIDE - APPROACH OR INTERSECTION; 98 - OTHER (EXPLAIN IN NARRATIVE); No Data<br>Latitude: 29.388805<br>Longitude: -98.521872</div>`)[0];
+                popup_86b918594a56e648067718e14332df39.setContent(html_92b6ba096d519243ada83e81f31d9670);
+            
+        
+
+        circle_marker_5e93110ce0f79aaee82568bf032ce7de.bindPopup(popup_86b918594a56e648067718e14332df39)
+        ;
+
+        
+    
+    
+            circle_marker_5e93110ce0f79aaee82568bf032ce7de.bindTooltip(
+                `<div>
+                     2026 — Crash 21509355
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f229f605e1526dabf4a314ad48284f34 = L.circleMarker(
+                [29.41970475, -98.53489911],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_52499052a0eb237606d596be80809c4d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8cc3a73a36f913f5d5f65f011013911e = $(`<div id="html_8cc3a73a36f913f5d5f65f011013911e" style="width: 100.0%; height: 100.0%;"><b>Crash 21514753</b><br>Year: 2026<br>Road: MONTEZUMA<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 36<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 39 - FAILED TO YIELD RIGHT OF WAY - YIELD SIGN; No Data; No Data<br>Latitude: 29.419705<br>Longitude: -98.534899</div>`)[0];
+                popup_52499052a0eb237606d596be80809c4d.setContent(html_8cc3a73a36f913f5d5f65f011013911e);
+            
+        
+
+        circle_marker_f229f605e1526dabf4a314ad48284f34.bindPopup(popup_52499052a0eb237606d596be80809c4d)
+        ;
+
+        
+    
+    
+            circle_marker_f229f605e1526dabf4a314ad48284f34.bindTooltip(
+                `<div>
+                     2026 — Crash 21514753
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f033c8607399eb05772e321d3852ce43 = L.circleMarker(
+                [29.39248549, -98.48641941],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_106dad1228e93ac21380c69c22a83457 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4c2773aef63fb29d76127281f469f8db = $(`<div id="html_4c2773aef63fb29d76127281f469f8db" style="width: 100.0%; height: 100.0%;"><b>Crash 21528273</b><br>Year: 2026<br>Road: STEVES AVE<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.392485<br>Longitude: -98.486419</div>`)[0];
+                popup_106dad1228e93ac21380c69c22a83457.setContent(html_4c2773aef63fb29d76127281f469f8db);
+            
+        
+
+        circle_marker_f033c8607399eb05772e321d3852ce43.bindPopup(popup_106dad1228e93ac21380c69c22a83457)
+        ;
+
+        
+    
+    
+            circle_marker_f033c8607399eb05772e321d3852ce43.bindTooltip(
+                `<div>
+                     2026 — Crash 21528273
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70f1610b3206b0fc544d5e72209e37d1 = L.circleMarker(
+                [29.44912207, -98.6026504],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_504ebaaaeef77c53958d430ff422f5e8 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4b4fbe05126c95fd21f50d60f3b5799b = $(`<div id="html_4b4fbe05126c95fd21f50d60f3b5799b" style="width: 100.0%; height: 100.0%;"><b>Crash 21595619</b><br>Year: 2026<br>Road: CALLAGHAN RD<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 34<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.449122<br>Longitude: -98.602650</div>`)[0];
+                popup_504ebaaaeef77c53958d430ff422f5e8.setContent(html_4b4fbe05126c95fd21f50d60f3b5799b);
+            
+        
+
+        circle_marker_70f1610b3206b0fc544d5e72209e37d1.bindPopup(popup_504ebaaaeef77c53958d430ff422f5e8)
+        ;
+
+        
+    
+    
+            circle_marker_70f1610b3206b0fc544d5e72209e37d1.bindTooltip(
+                `<div>
+                     2026 — Crash 21595619
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1d80b4e068859c0a6e836d91655415a = L.circleMarker(
+                [29.42951188, -98.55425818],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_d53f90a50481726fe9dbf66f9717c605 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_328700dfdee152cf98c91fdbf3ab35ed = $(`<div id="html_328700dfdee152cf98c91fdbf3ab35ed" style="width: 100.0%; height: 100.0%;"><b>Crash 21598611</b><br>Year: 2026<br>Road: S GENERAL MCMULLEN<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 43<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.429512<br>Longitude: -98.554258</div>`)[0];
+                popup_d53f90a50481726fe9dbf66f9717c605.setContent(html_328700dfdee152cf98c91fdbf3ab35ed);
+            
+        
+
+        circle_marker_b1d80b4e068859c0a6e836d91655415a.bindPopup(popup_d53f90a50481726fe9dbf66f9717c605)
+        ;
+
+        
+    
+    
+            circle_marker_b1d80b4e068859c0a6e836d91655415a.bindTooltip(
+                `<div>
+                     2026 — Crash 21598611
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_676e703b883e25f64184a7a296dc5b0f = L.circleMarker(
+                [29.42655497, -98.52125231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_7b9ed383da5212ca012c2b7dc4c95b76 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b63184d7dba488c8ca8893f3875449ab = $(`<div id="html_b63184d7dba488c8ca8893f3875449ab" style="width: 100.0%; height: 100.0%;"><b>Crash 21599599</b><br>Year: 2026<br>Road: BUENA VISTA ST<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 62<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 71 - WRONG WAY - ONE WAY ROAD; No Data; No Data<br>Latitude: 29.426555<br>Longitude: -98.521252</div>`)[0];
+                popup_7b9ed383da5212ca012c2b7dc4c95b76.setContent(html_b63184d7dba488c8ca8893f3875449ab);
+            
+        
+
+        circle_marker_676e703b883e25f64184a7a296dc5b0f.bindPopup(popup_7b9ed383da5212ca012c2b7dc4c95b76)
+        ;
+
+        
+    
+    
+            circle_marker_676e703b883e25f64184a7a296dc5b0f.bindTooltip(
+                `<div>
+                     2026 — Crash 21599599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14eccf93b4f272a50fce6d664b8e9e30 = L.circleMarker(
+                [29.49874029, -98.4237048],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+        
+    
+        var popup_57c017f910eb819b1cbbf78f8ddc9d42 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c28f9f72097aeecb4e6a9f67d5a11e75 = $(`<div id="html_c28f9f72097aeecb4e6a9f67d5a11e75" style="width: 100.0%; height: 100.0%;"><b>Crash 21613516</b><br>Year: 2026<br>Road: AUSTIN HWY<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.498740<br>Longitude: -98.423705</div>`)[0];
+                popup_57c017f910eb819b1cbbf78f8ddc9d42.setContent(html_c28f9f72097aeecb4e6a9f67d5a11e75);
+            
+        
+
+        circle_marker_14eccf93b4f272a50fce6d664b8e9e30.bindPopup(popup_57c017f910eb819b1cbbf78f8ddc9d42)
+        ;
+
+        
+    
+    
+            circle_marker_14eccf93b4f272a50fce6d664b8e9e30.bindTooltip(
+                `<div>
+                     2026 — Crash 21613516
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_bab1d4de4a9526017251aa728f32ab5d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3327a590705db36ea9775f45f71f7135,
+                },
+                overlays :  {
+                    "Candidate corridors" : geo_json_d98b0881e4fecb1baf91a06d8cc1939f,
+                },
+            };
+            let layer_control_bab1d4de4a9526017251aa728f32ab5d = L.control.layers(
+                layer_control_bab1d4de4a9526017251aa728f32ab5d_layers.base_layers,
+                layer_control_bab1d4de4a9526017251aa728f32ab5d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_c73b0b5bb11ba74920072f58e2065689);
+
+        
+</script>
+</html>

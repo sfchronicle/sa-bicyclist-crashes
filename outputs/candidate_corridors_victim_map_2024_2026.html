@@ -1,0 +1,2823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_26c52eded22fc19168f6f2ea70c74c46 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_26c52eded22fc19168f6f2ea70c74c46" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_26c52eded22fc19168f6f2ea70c74c46 = L.map(
+                "map_26c52eded22fc19168f6f2ea70c74c46",
+                {
+                    center: [29.430036097625, -98.498397688625],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+
+            
+
+        
+    
+        function geo_json_496d04cea6a6177a125b02fb71b71333_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#d95f02", "opacity": 0.85, "weight": 6};
+            }
+        }
+
+        function geo_json_496d04cea6a6177a125b02fb71b71333_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_496d04cea6a6177a125b02fb71b71333 = L.geoJson(null, {
+                onEachFeature: geo_json_496d04cea6a6177a125b02fb71b71333_onEachFeature,
+            
+                style: geo_json_496d04cea6a6177a125b02fb71b71333_styler,
+            ...{
+}
+        });
+
+        function geo_json_496d04cea6a6177a125b02fb71b71333_add (data) {
+            geo_json_496d04cea6a6177a125b02fb71b71333
+                .addData(data);
+        }
+            geo_json_496d04cea6a6177a125b02fb71b71333_add({"features": [{"geometry": {"coordinates": [[[-98.42501917815886, 29.49791956848158], [-98.4242470144314, 29.498404408017475], [-98.42333680637276, 29.49897734189034], [-98.42266009003804, 29.499397954027888]], [[-98.40771487660555, 29.510319672561586], [-98.40559218556487, 29.511875809151856], [-98.40507104859235, 29.51227914710786], [-98.40476061913257, 29.512539034702762]]], "type": "MultiLineString"}, "id": "0", "properties": {"CouncilDis": "2_10", "GlobalID": "{E901E52A-FE71-4563-BDEB-E3238EB1F32A}", "HistoricDi": null, "LengthFeet": 923.08562613, "Maintenanc": "TXDOT", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 923.085626129, "candidate_group": 0, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "TBD", "from_streets": "WALZEM RD", "last_year": 2026, "length_miles": 0.17482682313068182, "max_match_distance_ft": 8.57647356623876, "road_class": "Primary Arterial A", "road_label": "AUSTIN HWY", "roads": "AUSTIN HWY", "segmentid": "309759", "serious_injuries": 2, "span_miles": 1.0085179623351987, "to_street": "TBD", "to_streets": "NE LOOP 410 ACCESS RD"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.49318333640632, 29.426421363946435], [-98.4930466578174, 29.42642565825963], [-98.49239621522122, 29.42645412852901]], [[-98.49133354285156, 29.426462462530676], [-98.48972580263052, 29.426472144996254]]], "type": "MultiLineString"}, "id": "1", "properties": {"CouncilDis": "1", "GlobalID": "{22148EC3-F89C-4469-A3C0-A04B7A0F73E0}", "HistoricDi": "Main / Military Plaza", "LengthFeet": 250.84049396, "Maintenanc": "COSA - Public Works Dept", "Material": "Brick and Block", "Neighborho": "Downtown Residents Association", "Owner": "San Antonio", "PavementWi": 22.0, "Shape_Leng": 250.840493955, "candidate_group": 1, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "SOLEDAD ST", "from_streets": "N ST MARYS, SOLEDAD ST", "last_year": 2024, "length_miles": 0.047507669310606064, "max_match_distance_ft": 4.594116121922741, "road_class": "None", "road_label": "E HOUSTON ST", "roads": "E HOUSTON ST", "segmentid": "510032", "serious_injuries": 2, "span_miles": 0.20577034722510054, "to_street": "BRIDGE", "to_streets": "BRIDGE, NAVARRO ST"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.59339078727875, 29.485376619494016], [-98.5939118381678, 29.4857625445778]], [[-98.59569497236023, 29.48713961362599], [-98.59692425910627, 29.48808252014754], [-98.59751111871306, 29.488527071009575]]], "type": "MultiLineString"}, "id": "2", "properties": {"CouncilDis": "7", "GlobalID": "{E1D846A0-626B-4A5D-B244-7B3B381D7725}", "HistoricDi": null, "LengthFeet": 217.18456923, "Maintenanc": "COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "San Antonio", "PavementWi": 74.0, "Shape_Leng": 217.184569228, "candidate_group": 2, "crashes": 2, "deaths": 1, "first_year": 2024, "from_street": "NW LOOP 410", "from_streets": "NW LOOP 410, WURZBACH RD", "last_year": 2025, "length_miles": 0.04113344114204545, "max_match_distance_ft": 3.047875943593348, "road_class": "None", "road_label": "EVERS RD", "roads": "EVERS RD", "segmentid": "416672", "serious_injuries": 1, "span_miles": 0.18653550413002834, "to_street": "NW LOOP 410 ACCESS RD", "to_streets": "JOINER DR, NW LOOP 410 ACCESS RD"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.5657303299362, 29.429947612285613], [-98.5660222937553, 29.429811737125956]], [[-98.5630292682844, 29.431001178322738], [-98.56314509015714, 29.430971896498786], [-98.56347459090837, 29.430876027971976], [-98.5636248236789, 29.430824951977154], [-98.56381515894961, 29.430763005835654], [-98.56406926229266, 29.430666201193034], [-98.56425963796762, 29.430594628748196], [-98.5645216383906, 29.430487536544994], [-98.5657303299362, 29.429947612285613]], [[-98.56941326748316, 29.42823513595849], [-98.5698263715073, 29.42805220140532], [-98.57052906692964, 29.427734059575705], [-98.57199818503395, 29.427068404026794], [-98.57241602358452, 29.42687791349288]]], "type": "MultiLineString"}, "id": "3", "properties": {"CouncilDis": "6", "GlobalID": "{7345E1B1-6BEF-4D0E-A703-FDA5C53F5110}", "HistoricDi": null, "LengthFeet": 105.25008641, "Maintenanc": "COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "San Antonio", "PavementWi": 66.0, "Shape_Leng": 105.250086409, "candidate_group": 3, "crashes": 3, "deaths": 2, "first_year": 2024, "from_street": "MONTEREY ST", "from_streets": "MONTEREY ST, S SAN JOAQUIN, W CESAR CHAVEZ BLVD", "last_year": 2025, "length_miles": 0.019933728486742422, "max_match_distance_ft": 1.6669485050726547, "road_class": "Secondary Arterial A", "road_label": "HISTORIC OLD HWY 90", "roads": "HISTORIC OLD HWY 90", "segmentid": "431415", "serious_injuries": 1, "span_miles": 0.542098735983591, "to_street": "MONTEREY ST", "to_streets": "MONTEREY ST, SW 36TH ST"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.4280907662558, 29.447138802590576], [-98.42638319317602, 29.44808237835863], [-98.42536048108298, 29.448627344224636], [-98.42462733992642, 29.448944592481492], [-98.42333659115515, 29.449514515631424]], [[-98.42690692444796, 29.448545290808813], [-98.42972774671851, 29.44701653813799], [-98.43095216061187, 29.446356199694765]]], "type": "MultiLineString"}, "id": "4", "properties": {"CouncilDis": "2", "GlobalID": "{BC4E6983-9548-41C4-A9AF-CF907A5D6C47}", "HistoricDi": null, "LengthFeet": 1744.09631045, "Maintenanc": "TXDOT", "Material": null, "Neighborho": "Non-NA Streets", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 1744.09631045, "candidate_group": 4, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "TBD", "from_streets": "", "last_year": 2026, "length_miles": 0.3303212709185606, "max_match_distance_ft": 33.52986612166625, "road_class": "None", "road_label": "IH 35 N ACCESS RD", "roads": "IH 35 N ACCESS RD", "segmentid": "313769", "serious_injuries": 2, "span_miles": 0.28410277626978564, "to_street": "TBD", "to_streets": ""}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.51276599450853, 29.39923513795185], [-98.51311730586443, 29.398834194325]], [[-98.5213738001885, 29.38934746565028], [-98.52192628802945, 29.388723073708178]]], "type": "MultiLineString"}, "id": "5", "properties": {"CouncilDis": "5", "GlobalID": "{259DD128-3623-467B-8799-4D5E5560640E}", "HistoricDi": null, "LengthFeet": 183.7543439, "Maintenanc": "TXDOT_COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Collins Garden", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 183.7543439, "candidate_group": 5, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "PRUITT", "from_streets": "PRADO ST, PRUITT", "last_year": 2026, "length_miles": 0.0348019590719697, "max_match_distance_ft": 4.620701913249613, "road_class": "Secondary Arterial B", "road_label": "NOGALITOS ST", "roads": "NOGALITOS ST", "segmentid": "409920", "serious_injuries": 2, "span_miles": 0.6922464664256426, "to_street": "DRAKE AVE", "to_streets": "CONCEPTION CT, DRAKE AVE"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.4790396139987, 29.325716768009706], [-98.47834834126395, 29.323409324465693], [-98.47799758992608, 29.322338090033906]], [[-98.4748735360157, 29.312807067484158], [-98.47407975413438, 29.310331424695576]]], "type": "MultiLineString"}, "id": "6", "properties": {"CouncilDis": "3", "GlobalID": "{74965660-467B-42AD-A5E7-C4428A6CB47B}", "HistoricDi": null, "LengthFeet": 1272.64130701, "Maintenanc": "TXDOT_COSA - Public Works Dept", "Material": null, "Neighborho": "Villa Coronado", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 1272.64130701, "candidate_group": 6, "crashes": 2, "deaths": 0, "first_year": 2024, "from_street": "HERBST", "from_streets": "HERBST", "last_year": 2025, "length_miles": 0.24103055057007575, "max_match_distance_ft": 9.095131038151836, "road_class": "Primary Arterial A", "road_label": "ROOSEVELT AVE", "roads": "ROOSEVELT AVE", "segmentid": "504144", "serious_injuries": 2, "span_miles": 0.83585735362898, "to_street": "SE LOOP 410 ACCESS RD", "to_streets": "SE LOOP 410 ACCESS RD"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.48886539530162, 29.351669996913298], [-98.48820663842187, 29.350158257903203]], [[-98.49256608649605, 29.360486372855483], [-98.49221624527497, 29.359651022804073]]], "type": "MultiLineString"}, "id": "7", "properties": {"CouncilDis": "3", "GlobalID": "{E6BDF11A-2497-4E42-8772-A0D0DD86A36A}", "HistoricDi": null, "LengthFeet": 588.36762299, "Maintenanc": "COSA - Public Works Dept", "Material": "AC Asphalt Concrete", "Neighborho": "Non-NA Streets", "Owner": "San Antonio", "PavementWi": 64.0, "Shape_Leng": 588.36762299, "candidate_group": 7, "crashes": 2, "deaths": 0, "first_year": 2025, "from_street": "E HARDING BLVD", "from_streets": "E HARDING BLVD, KENDALIA AVE", "last_year": 2026, "length_miles": 0.11143326192992424, "max_match_distance_ft": 4.332530497432884, "road_class": "Secondary Arterial B", "road_label": "S FLORES ST", "roads": "S FLORES ST", "segmentid": "504059", "serious_injuries": 2, "span_miles": 0.6425477157918398, "to_street": "GENEVIEVE DR", "to_streets": "E BONNER AVE, GENEVIEVE DR"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-98.35079336898288, 29.499033208067615], [-98.35069644227939, 29.498949543281114], [-98.35049637950503, 29.498769806444894], [-98.35011230304212, 29.49835884419579], [-98.34980723248769, 29.498007395649555], [-98.34920323086959, 29.497328588853986]], [[-98.37009431795661, 29.50829201728971], [-98.36928820238501, 29.507344205740633]]], "type": "MultiLineString"}, "id": "8", "properties": {"CouncilDis": "2", "GlobalID": "{07CE083D-1850-4614-B337-1F4BEF68B4F8}", "HistoricDi": null, "LengthFeet": 800.79712969, "Maintenanc": "TXDOT_COSA - Public Works Dept", "Material": null, "Neighborho": "Non-NA Streets", "Owner": "TXDOT", "PavementWi": 1.0, "Shape_Leng": 800.797129687, "candidate_group": 8, "crashes": 2, "deaths": 1, "first_year": 2025, "from_street": "TBD", "from_streets": "", "last_year": 2025, "length_miles": 0.1516661230473485, "max_match_distance_ft": 1.4187880261573778, "road_class": "Secondary Arterial A", "road_label": "WALZEM RD", "roads": "WALZEM RD", "segmentid": "313142", "serious_injuries": 1, "span_miles": 1.2457290877955418, "to_street": "TBD", "to_streets": ""}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_496d04cea6a6177a125b02fb71b71333.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["roads", "crashes", "deaths", "serious_injuries", "first_year", "last_year"];
+    let aliases = ["Road", "Crashes", "Deaths", "Serious injuries", "First year", "Last year"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_496d04cea6a6177a125b02fb71b71333.addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+            var circle_marker_0075ed97ac892d18f2d3b03bf71199e2 = L.circleMarker(
+                [29.42693866, -98.57229298],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_b6dd0d742e9dad9f64ead978451cf0c5 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ec079412a0bedd13074ca99ee5f09798 = $(`<div id="html_ec079412a0bedd13074ca99ee5f09798" style="width: 100.0%; height: 100.0%;"><b>Crash 19980922</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 63<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.426939<br>Longitude: -98.572293</div>`)[0];
+                popup_b6dd0d742e9dad9f64ead978451cf0c5.setContent(html_ec079412a0bedd13074ca99ee5f09798);
+            
+        
+
+        circle_marker_0075ed97ac892d18f2d3b03bf71199e2.bindPopup(popup_b6dd0d742e9dad9f64ead978451cf0c5)
+        ;
+
+        
+    
+    
+            circle_marker_0075ed97ac892d18f2d3b03bf71199e2.bindTooltip(
+                `<div>
+                     2024 — Crash 19980922
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f729ac6be091feed4bd3c478d2cc535 = L.circleMarker(
+                [29.35621499, -98.61564229],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_586f3f520fdc135fadaff2b0eabb1297 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2832391fbe4d9370d9ce413c7ab1a349 = $(`<div id="html_2832391fbe4d9370d9ce413c7ab1a349" style="width: 100.0%; height: 100.0%;"><b>Crash 20013870</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 30<br>Victim gender: 2 - FEMALE<br>Helmet: 2 - WORN, DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.356215<br>Longitude: -98.615642</div>`)[0];
+                popup_586f3f520fdc135fadaff2b0eabb1297.setContent(html_2832391fbe4d9370d9ce413c7ab1a349);
+            
+        
+
+        circle_marker_0f729ac6be091feed4bd3c478d2cc535.bindPopup(popup_586f3f520fdc135fadaff2b0eabb1297)
+        ;
+
+        
+    
+    
+            circle_marker_0f729ac6be091feed4bd3c478d2cc535.bindTooltip(
+                `<div>
+                     2024 — Crash 20013870
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e9f1427fa6a470e31e7580925b5a8ee = L.circleMarker(
+                [29.35722192, -98.62218643],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_2b64a14c4df35e17bfad7e9c7c669248 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_df5bc85df0c37e2dcda739daa4483044 = $(`<div id="html_df5bc85df0c37e2dcda739daa4483044" style="width: 100.0%; height: 100.0%;"><b>Crash 20033596</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 28<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.357222<br>Longitude: -98.622186</div>`)[0];
+                popup_2b64a14c4df35e17bfad7e9c7c669248.setContent(html_df5bc85df0c37e2dcda739daa4483044);
+            
+        
+
+        circle_marker_1e9f1427fa6a470e31e7580925b5a8ee.bindPopup(popup_2b64a14c4df35e17bfad7e9c7c669248)
+        ;
+
+        
+    
+    
+            circle_marker_1e9f1427fa6a470e31e7580925b5a8ee.bindTooltip(
+                `<div>
+                     2024 — Crash 20033596
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22bfccf86c7c8b389e526214d9e03cdd = L.circleMarker(
+                [29.33556181, -98.45349578],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_1b9b19c6aee179a2d63739dffbb1eda1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_0b99b355cfd85a873d80a627bd7fc5f2 = $(`<div id="html_0b99b355cfd85a873d80a627bd7fc5f2" style="width: 100.0%; height: 100.0%;"><b>Crash 20037935</b><br>Year: 2024<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 65<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.335562<br>Longitude: -98.453496</div>`)[0];
+                popup_1b9b19c6aee179a2d63739dffbb1eda1.setContent(html_0b99b355cfd85a873d80a627bd7fc5f2);
+            
+        
+
+        circle_marker_22bfccf86c7c8b389e526214d9e03cdd.bindPopup(popup_1b9b19c6aee179a2d63739dffbb1eda1)
+        ;
+
+        
+    
+    
+            circle_marker_22bfccf86c7c8b389e526214d9e03cdd.bindTooltip(
+                `<div>
+                     2024 — Crash 20037935
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b72c4ea5f98d6043803aeb77c9994d1b = L.circleMarker(
+                [29.42703497, -98.5608123],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_c363ab8946fbd51044f40e0dac39404a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_fe501c662ba6437ea08c6e0ec685ecd2 = $(`<div id="html_fe501c662ba6437ea08c6e0ec685ecd2" style="width: 100.0%; height: 100.0%;"><b>Crash 20043829</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 55<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.427035<br>Longitude: -98.560812</div>`)[0];
+                popup_c363ab8946fbd51044f40e0dac39404a.setContent(html_fe501c662ba6437ea08c6e0ec685ecd2);
+            
+        
+
+        circle_marker_b72c4ea5f98d6043803aeb77c9994d1b.bindPopup(popup_c363ab8946fbd51044f40e0dac39404a)
+        ;
+
+        
+    
+    
+            circle_marker_b72c4ea5f98d6043803aeb77c9994d1b.bindTooltip(
+                `<div>
+                     2024 — Crash 20043829
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af1914107a688c115df9d6df31dfc49c = L.circleMarker(
+                [29.29682737, -98.47608232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_c99f6f985cbdf951da6ee0a7084bd6cb = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_24f387491cceb9c3969f403772e082d7 = $(`<div id="html_24f387491cceb9c3969f403772e082d7" style="width: 100.0%; height: 100.0%;"><b>Crash 20045954</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 74<br>Victim gender: 1 - MALE<br>Helmet: 2 - WORN, DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.296827<br>Longitude: -98.476082</div>`)[0];
+                popup_c99f6f985cbdf951da6ee0a7084bd6cb.setContent(html_24f387491cceb9c3969f403772e082d7);
+            
+        
+
+        circle_marker_af1914107a688c115df9d6df31dfc49c.bindPopup(popup_c99f6f985cbdf951da6ee0a7084bd6cb)
+        ;
+
+        
+    
+    
+            circle_marker_af1914107a688c115df9d6df31dfc49c.bindTooltip(
+                `<div>
+                     2024 — Crash 20045954
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1da08d9c6095cafed9a8e36674de89ab = L.circleMarker(
+                [29.56444097, -98.48247293],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_d2c1fdc50d23bfb6678c02212ba374fd = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c2d310082f947b7e9f06c744cfc8c0d5 = $(`<div id="html_c2d310082f947b7e9f06c744cfc8c0d5" style="width: 100.0%; height: 100.0%;"><b>Crash 20046105</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 43<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.564441<br>Longitude: -98.482473</div>`)[0];
+                popup_d2c1fdc50d23bfb6678c02212ba374fd.setContent(html_c2d310082f947b7e9f06c744cfc8c0d5);
+            
+        
+
+        circle_marker_1da08d9c6095cafed9a8e36674de89ab.bindPopup(popup_d2c1fdc50d23bfb6678c02212ba374fd)
+        ;
+
+        
+    
+    
+            circle_marker_1da08d9c6095cafed9a8e36674de89ab.bindTooltip(
+                `<div>
+                     2024 — Crash 20046105
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6969fd71d0a2235e14e02455690a8052 = L.circleMarker(
+                [29.28304454, -98.3991035],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_6416095d46abaa08e181e84493c0dc24 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b60de75523265f31e5bff853ea1d08a9 = $(`<div id="html_b60de75523265f31e5bff853ea1d08a9" style="width: 100.0%; height: 100.0%;"><b>Crash 20047884</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 33<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.283045<br>Longitude: -98.399103</div>`)[0];
+                popup_6416095d46abaa08e181e84493c0dc24.setContent(html_b60de75523265f31e5bff853ea1d08a9);
+            
+        
+
+        circle_marker_6969fd71d0a2235e14e02455690a8052.bindPopup(popup_6416095d46abaa08e181e84493c0dc24)
+        ;
+
+        
+    
+    
+            circle_marker_6969fd71d0a2235e14e02455690a8052.bindTooltip(
+                `<div>
+                     2024 — Crash 20047884
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_146106e2849f22d465103edf16afad12 = L.circleMarker(
+                [29.43353641, -98.48730098],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_ab442d67d0e06650bed3b675981912be = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8da5df742ea17adf60c7ddbdea669b83 = $(`<div id="html_8da5df742ea17adf60c7ddbdea669b83" style="width: 100.0%; height: 100.0%;"><b>Crash 20073977</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.433536<br>Longitude: -98.487301</div>`)[0];
+                popup_ab442d67d0e06650bed3b675981912be.setContent(html_8da5df742ea17adf60c7ddbdea669b83);
+            
+        
+
+        circle_marker_146106e2849f22d465103edf16afad12.bindPopup(popup_ab442d67d0e06650bed3b675981912be)
+        ;
+
+        
+    
+    
+            circle_marker_146106e2849f22d465103edf16afad12.bindTooltip(
+                `<div>
+                     2024 — Crash 20073977
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_207a54f9c3a509b5f34dbd58bdaf3421 = L.circleMarker(
+                [29.52886495, -98.50050231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_3e6bec7339fb26979b94fafb2028b4eb = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3c9e15a8821bd39a58ca656c9a4a65dd = $(`<div id="html_3c9e15a8821bd39a58ca656c9a4a65dd" style="width: 100.0%; height: 100.0%;"><b>Crash 20121055</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 57<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 16 - DISREGARD STOP SIGN OR LIGHT; 20 - DRIVER INATTENTION; No Data<br>Latitude: 29.528865<br>Longitude: -98.500502</div>`)[0];
+                popup_3e6bec7339fb26979b94fafb2028b4eb.setContent(html_3c9e15a8821bd39a58ca656c9a4a65dd);
+            
+        
+
+        circle_marker_207a54f9c3a509b5f34dbd58bdaf3421.bindPopup(popup_3e6bec7339fb26979b94fafb2028b4eb)
+        ;
+
+        
+    
+    
+            circle_marker_207a54f9c3a509b5f34dbd58bdaf3421.bindTooltip(
+                `<div>
+                     2024 — Crash 20121055
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fe38e97eadc47be41398e1de7b7d74a = L.circleMarker(
+                [29.394747, -98.65807517],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_04f64939ee36ad66d24fb7598fbe84a1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_621b6d7d32caf7c55beff430198123fe = $(`<div id="html_621b6d7d32caf7c55beff430198123fe" style="width: 100.0%; height: 100.0%;"><b>Crash 20123688</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 41<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); 21 - DROVE WITHOUT HEADLIGHTS; No Data<br>Latitude: 29.394747<br>Longitude: -98.658075</div>`)[0];
+                popup_04f64939ee36ad66d24fb7598fbe84a1.setContent(html_621b6d7d32caf7c55beff430198123fe);
+            
+        
+
+        circle_marker_3fe38e97eadc47be41398e1de7b7d74a.bindPopup(popup_04f64939ee36ad66d24fb7598fbe84a1)
+        ;
+
+        
+    
+    
+            circle_marker_3fe38e97eadc47be41398e1de7b7d74a.bindTooltip(
+                `<div>
+                     2024 — Crash 20123688
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94d65b1ac87fe3e9af69c6d1f485c68e = L.circleMarker(
+                [29.52050745, -98.50504964],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_bf8cb7a64e5dd345acc4b7c36da3af7a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2597806ad529b506858a1babcc1a3615 = $(`<div id="html_2597806ad529b506858a1babcc1a3615" style="width: 100.0%; height: 100.0%;"><b>Crash 20154176</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.520507<br>Longitude: -98.505050</div>`)[0];
+                popup_bf8cb7a64e5dd345acc4b7c36da3af7a.setContent(html_2597806ad529b506858a1babcc1a3615);
+            
+        
+
+        circle_marker_94d65b1ac87fe3e9af69c6d1f485c68e.bindPopup(popup_bf8cb7a64e5dd345acc4b7c36da3af7a)
+        ;
+
+        
+    
+    
+            circle_marker_94d65b1ac87fe3e9af69c6d1f485c68e.bindTooltip(
+                `<div>
+                     2024 — Crash 20154176
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70d58ece17f3af13c32af02c9b7b78dc = L.circleMarker(
+                [29.44947264, -98.42342232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_80730f8784ef848464d0f5b5482c8978 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ad5341e1c4c0c240a0df5c1883665572 = $(`<div id="html_ad5341e1c4c0c240a0df5c1883665572" style="width: 100.0%; height: 100.0%;"><b>Crash 20198215</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 40<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.449473<br>Longitude: -98.423422</div>`)[0];
+                popup_80730f8784ef848464d0f5b5482c8978.setContent(html_ad5341e1c4c0c240a0df5c1883665572);
+            
+        
+
+        circle_marker_70d58ece17f3af13c32af02c9b7b78dc.bindPopup(popup_80730f8784ef848464d0f5b5482c8978)
+        ;
+
+        
+    
+    
+            circle_marker_70d58ece17f3af13c32af02c9b7b78dc.bindTooltip(
+                `<div>
+                     2024 — Crash 20198215
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_719b2468ba2e17cd18443d031c56c91a = L.circleMarker(
+                [29.45993496, -98.49932231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_252ca017eaef28a97f2d9f681b1f4795 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_fae3f56165ec7e55ea229959ff7f8f19 = $(`<div id="html_fae3f56165ec7e55ea229959ff7f8f19" style="width: 100.0%; height: 100.0%;"><b>Crash 20202028</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 23<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.459935<br>Longitude: -98.499322</div>`)[0];
+                popup_252ca017eaef28a97f2d9f681b1f4795.setContent(html_fae3f56165ec7e55ea229959ff7f8f19);
+            
+        
+
+        circle_marker_719b2468ba2e17cd18443d031c56c91a.bindPopup(popup_252ca017eaef28a97f2d9f681b1f4795)
+        ;
+
+        
+    
+    
+            circle_marker_719b2468ba2e17cd18443d031c56c91a.bindTooltip(
+                `<div>
+                     2024 — Crash 20202028
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6da315db58949db8121b224d7c1ac26 = L.circleMarker(
+                [29.4495974, -98.52437231],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_6cbd2644b075b0a05f92ab9af620f078 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_71de9dab5fb051e526470bb853db02d9 = $(`<div id="html_71de9dab5fb051e526470bb853db02d9" style="width: 100.0%; height: 100.0%;"><b>Crash 20258650</b><br>Year: 2024<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 34 - FAILED TO YIELD RIGHT OF WAY - PRIVATE DRIVE; No Data; No Data<br>Latitude: 29.449597<br>Longitude: -98.524372</div>`)[0];
+                popup_6cbd2644b075b0a05f92ab9af620f078.setContent(html_71de9dab5fb051e526470bb853db02d9);
+            
+        
+
+        circle_marker_f6da315db58949db8121b224d7c1ac26.bindPopup(popup_6cbd2644b075b0a05f92ab9af620f078)
+        ;
+
+        
+    
+    
+            circle_marker_f6da315db58949db8121b224d7c1ac26.bindTooltip(
+                `<div>
+                     2024 — Crash 20258650
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2cf326d5be8c9f1690695ff6ae23c88 = L.circleMarker(
+                [29.35385877, -98.42407344],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_edffe95d7f72d62e7a2dec77f1371a49 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_75a8d08ca1d8247c0fcfe20ff2993143 = $(`<div id="html_75a8d08ca1d8247c0fcfe20ff2993143" style="width: 100.0%; height: 100.0%;"><b>Crash 20270302</b><br>Year: 2024<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 49<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 33 - FAILED TO YIELD RIGHT OF WAY - OPEN INTERSECTION; No Data; No Data<br>Latitude: 29.353859<br>Longitude: -98.424073</div>`)[0];
+                popup_edffe95d7f72d62e7a2dec77f1371a49.setContent(html_75a8d08ca1d8247c0fcfe20ff2993143);
+            
+        
+
+        circle_marker_c2cf326d5be8c9f1690695ff6ae23c88.bindPopup(popup_edffe95d7f72d62e7a2dec77f1371a49)
+        ;
+
+        
+    
+    
+            circle_marker_c2cf326d5be8c9f1690695ff6ae23c88.bindTooltip(
+                `<div>
+                     2024 — Crash 20270302
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_269991e9fc473c7e256ec15dad57f3bd = L.circleMarker(
+                [29.43085497, -98.62579228],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_49a635511e3a4f2a175b8c3ce1b9dd23 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_bf120974742a9a73a85b0d7a8fc5f0a5 = $(`<div id="html_bf120974742a9a73a85b0d7a8fc5f0a5" style="width: 100.0%; height: 100.0%;"><b>Crash 20298414</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 69 - WRONG SIDE - APPROACH OR INTERSECTION; No Data; No Data<br>Latitude: 29.430855<br>Longitude: -98.625792</div>`)[0];
+                popup_49a635511e3a4f2a175b8c3ce1b9dd23.setContent(html_bf120974742a9a73a85b0d7a8fc5f0a5);
+            
+        
+
+        circle_marker_269991e9fc473c7e256ec15dad57f3bd.bindPopup(popup_49a635511e3a4f2a175b8c3ce1b9dd23)
+        ;
+
+        
+    
+    
+            circle_marker_269991e9fc473c7e256ec15dad57f3bd.bindTooltip(
+                `<div>
+                     2024 — Crash 20298414
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa00ad448408984ee82cf3bb4366b728 = L.circleMarker(
+                [29.32321145, -98.43291037],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_cf643de3cf81f229a6b674f70ed1f131 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_325f022eec9d90777786c8aa9c22f596 = $(`<div id="html_325f022eec9d90777786c8aa9c22f596" style="width: 100.0%; height: 100.0%;"><b>Crash 20334599</b><br>Year: 2024<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 63<br>Victim gender: 2 - FEMALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.323211<br>Longitude: -98.432910</div>`)[0];
+                popup_cf643de3cf81f229a6b674f70ed1f131.setContent(html_325f022eec9d90777786c8aa9c22f596);
+            
+        
+
+        circle_marker_fa00ad448408984ee82cf3bb4366b728.bindPopup(popup_cf643de3cf81f229a6b674f70ed1f131)
+        ;
+
+        
+    
+    
+            circle_marker_fa00ad448408984ee82cf3bb4366b728.bindTooltip(
+                `<div>
+                     2024 — Crash 20334599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6acbf0e2b02213f2dcd051d8c92575d = L.circleMarker(
+                [29.51089606, -98.40697059],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_ed0d82858419f082cb0e9ae77d278741 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5625cd9e4852d428b64f3586040af752 = $(`<div id="html_5625cd9e4852d428b64f3586040af752" style="width: 100.0%; height: 100.0%;"><b>Crash 20340999</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.510896<br>Longitude: -98.406971</div>`)[0];
+                popup_ed0d82858419f082cb0e9ae77d278741.setContent(html_5625cd9e4852d428b64f3586040af752);
+            
+        
+
+        circle_marker_e6acbf0e2b02213f2dcd051d8c92575d.bindPopup(popup_ed0d82858419f082cb0e9ae77d278741)
+        ;
+
+        
+    
+    
+            circle_marker_e6acbf0e2b02213f2dcd051d8c92575d.bindTooltip(
+                `<div>
+                     2024 — Crash 20340999
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b096fe9290138e65758505c9e61ca315 = L.circleMarker(
+                [29.3566011, -98.51759777],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_54b8cec6792d4445cd18a21581306933 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_195f30a253cbdf3980facb5a6ef8082e = $(`<div id="html_195f30a253cbdf3980facb5a6ef8082e" style="width: 100.0%; height: 100.0%;"><b>Crash 20341297</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 58<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 34 - FAILED TO YIELD RIGHT OF WAY - PRIVATE DRIVE; No Data; No Data<br>Latitude: 29.356601<br>Longitude: -98.517598</div>`)[0];
+                popup_54b8cec6792d4445cd18a21581306933.setContent(html_195f30a253cbdf3980facb5a6ef8082e);
+            
+        
+
+        circle_marker_b096fe9290138e65758505c9e61ca315.bindPopup(popup_54b8cec6792d4445cd18a21581306933)
+        ;
+
+        
+    
+    
+            circle_marker_b096fe9290138e65758505c9e61ca315.bindTooltip(
+                `<div>
+                     2024 — Crash 20341297
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a7170effc5aac5e54158dedec794d67 = L.circleMarker(
+                [29.49409637, -98.70474457],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_78bab42f35b7c621a5a93385af99a606 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_18bf4901e3e50c5616f0fc212d70a3ae = $(`<div id="html_18bf4901e3e50c5616f0fc212d70a3ae" style="width: 100.0%; height: 100.0%;"><b>Crash 20364680</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 36<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 15 - DISREGARD STOP AND GO SIGNAL; No Data; No Data<br>Latitude: 29.494096<br>Longitude: -98.704745</div>`)[0];
+                popup_78bab42f35b7c621a5a93385af99a606.setContent(html_18bf4901e3e50c5616f0fc212d70a3ae);
+            
+        
+
+        circle_marker_0a7170effc5aac5e54158dedec794d67.bindPopup(popup_78bab42f35b7c621a5a93385af99a606)
+        ;
+
+        
+    
+    
+            circle_marker_0a7170effc5aac5e54158dedec794d67.bindTooltip(
+                `<div>
+                     2024 — Crash 20364680
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b15d35f793d4c36ae1deb1187a77107f = L.circleMarker(
+                [29.37335801, -98.51531817],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_973609436260cc09c066f7cc2c73b64f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3219168a3d62ec80db27a571893d7051 = $(`<div id="html_3219168a3d62ec80db27a571893d7051" style="width: 100.0%; height: 100.0%;"><b>Crash 20366218</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 41<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.373358<br>Longitude: -98.515318</div>`)[0];
+                popup_973609436260cc09c066f7cc2c73b64f.setContent(html_3219168a3d62ec80db27a571893d7051);
+            
+        
+
+        circle_marker_b15d35f793d4c36ae1deb1187a77107f.bindPopup(popup_973609436260cc09c066f7cc2c73b64f)
+        ;
+
+        
+    
+    
+            circle_marker_b15d35f793d4c36ae1deb1187a77107f.bindTooltip(
+                `<div>
+                     2024 — Crash 20366218
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c35cdd58bef2d9e1a13f7b2111d820a = L.circleMarker(
+                [29.44051363, -98.4806191],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_55f1473a001ce78ee4bf9ed211dda313 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_905c34e221a9867a373e2310cb3ed653 = $(`<div id="html_905c34e221a9867a373e2310cb3ed653" style="width: 100.0%; height: 100.0%;"><b>Crash 20368088</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 21<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: 44 - FOLLOWED TOO CLOSELY; No Data; No Data<br>Latitude: 29.440514<br>Longitude: -98.480619</div>`)[0];
+                popup_55f1473a001ce78ee4bf9ed211dda313.setContent(html_905c34e221a9867a373e2310cb3ed653);
+            
+        
+
+        circle_marker_7c35cdd58bef2d9e1a13f7b2111d820a.bindPopup(popup_55f1473a001ce78ee4bf9ed211dda313)
+        ;
+
+        
+    
+    
+            circle_marker_7c35cdd58bef2d9e1a13f7b2111d820a.bindTooltip(
+                `<div>
+                     2024 — Crash 20368088
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d919daabf9fc8169264b71a030970e5 = L.circleMarker(
+                [29.43092802, -98.56331164],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_e5acc7af20fd237f4b1405d39674ddea = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e5fc3739ad7f0c12ab0d147ab60961b8 = $(`<div id="html_e5fc3739ad7f0c12ab0d147ab60961b8" style="width: 100.0%; height: 100.0%;"><b>Crash 20375061</b><br>Year: 2024<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 58<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.430928<br>Longitude: -98.563312</div>`)[0];
+                popup_e5acc7af20fd237f4b1405d39674ddea.setContent(html_e5fc3739ad7f0c12ab0d147ab60961b8);
+            
+        
+
+        circle_marker_4d919daabf9fc8169264b71a030970e5.bindPopup(popup_e5acc7af20fd237f4b1405d39674ddea)
+        ;
+
+        
+    
+    
+            circle_marker_4d919daabf9fc8169264b71a030970e5.bindTooltip(
+                `<div>
+                     2024 — Crash 20375061
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d46dba5506a77e51beb2270a6ae000e = L.circleMarker(
+                [29.54736443, -98.37478225],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_b38b87ea00debc1235acb064669b1f39 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_caab06eb6f5ace248769f61d35046c8e = $(`<div id="html_caab06eb6f5ace248769f61d35046c8e" style="width: 100.0%; height: 100.0%;"><b>Crash 20382379</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 50<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.547364<br>Longitude: -98.374782</div>`)[0];
+                popup_b38b87ea00debc1235acb064669b1f39.setContent(html_caab06eb6f5ace248769f61d35046c8e);
+            
+        
+
+        circle_marker_6d46dba5506a77e51beb2270a6ae000e.bindPopup(popup_b38b87ea00debc1235acb064669b1f39)
+        ;
+
+        
+    
+    
+            circle_marker_6d46dba5506a77e51beb2270a6ae000e.bindTooltip(
+                `<div>
+                     2024 — Crash 20382379
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fde31730ac68de6c9a35363f6fb5aa83 = L.circleMarker(
+                [29.48804996, -98.59686729],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_bb214a5ed762381c886b5977ea20cf93 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_452d4adb26b69b7e14c097cc466f0c4d = $(`<div id="html_452d4adb26b69b7e14c097cc466f0c4d" style="width: 100.0%; height: 100.0%;"><b>Crash 20389091</b><br>Year: 2024<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 47<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.488050<br>Longitude: -98.596867</div>`)[0];
+                popup_bb214a5ed762381c886b5977ea20cf93.setContent(html_452d4adb26b69b7e14c097cc466f0c4d);
+            
+        
+
+        circle_marker_fde31730ac68de6c9a35363f6fb5aa83.bindPopup(popup_bb214a5ed762381c886b5977ea20cf93)
+        ;
+
+        
+    
+    
+            circle_marker_fde31730ac68de6c9a35363f6fb5aa83.bindTooltip(
+                `<div>
+                     2024 — Crash 20389091
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2bdcf286cf3bd77644edb488d62ea053 = L.circleMarker(
+                [29.49893293, -98.56460433],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_61b02b148803cc2e92a60541d1e94b8c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_99848eb354dcb103a8e46c3628ac3dd7 = $(`<div id="html_99848eb354dcb103a8e46c3628ac3dd7" style="width: 100.0%; height: 100.0%;"><b>Crash 20397058</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 19<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 21 - DROVE WITHOUT HEADLIGHTS; No Data; No Data<br>Latitude: 29.498933<br>Longitude: -98.564604</div>`)[0];
+                popup_61b02b148803cc2e92a60541d1e94b8c.setContent(html_99848eb354dcb103a8e46c3628ac3dd7);
+            
+        
+
+        circle_marker_2bdcf286cf3bd77644edb488d62ea053.bindPopup(popup_61b02b148803cc2e92a60541d1e94b8c)
+        ;
+
+        
+    
+    
+            circle_marker_2bdcf286cf3bd77644edb488d62ea053.bindTooltip(
+                `<div>
+                     2024 — Crash 20397058
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f180adef0f55d7356aeb38ac44b9cfa = L.circleMarker(
+                [29.32298807, -98.47818074],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_eff093436a033a79827909d79a3c1dae = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_0010c32f66d307cff2b0553930606451 = $(`<div id="html_0010c32f66d307cff2b0553930606451" style="width: 100.0%; height: 100.0%;"><b>Crash 20407728</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 35<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.322988<br>Longitude: -98.478181</div>`)[0];
+                popup_eff093436a033a79827909d79a3c1dae.setContent(html_0010c32f66d307cff2b0553930606451);
+            
+        
+
+        circle_marker_1f180adef0f55d7356aeb38ac44b9cfa.bindPopup(popup_eff093436a033a79827909d79a3c1dae)
+        ;
+
+        
+    
+    
+            circle_marker_1f180adef0f55d7356aeb38ac44b9cfa.bindTooltip(
+                `<div>
+                     2024 — Crash 20407728
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e42ce6c66911cb7af9849bdb3ceb297a = L.circleMarker(
+                [29.37302303, -98.48150108],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_9d52bc75c33d44105594471418c5e3d6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_885c22b52b484d5320734ceabc6f10d7 = $(`<div id="html_885c22b52b484d5320734ceabc6f10d7" style="width: 100.0%; height: 100.0%;"><b>Crash 20413497</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 27<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.373023<br>Longitude: -98.481501</div>`)[0];
+                popup_9d52bc75c33d44105594471418c5e3d6.setContent(html_885c22b52b484d5320734ceabc6f10d7);
+            
+        
+
+        circle_marker_e42ce6c66911cb7af9849bdb3ceb297a.bindPopup(popup_9d52bc75c33d44105594471418c5e3d6)
+        ;
+
+        
+    
+    
+            circle_marker_e42ce6c66911cb7af9849bdb3ceb297a.bindTooltip(
+                `<div>
+                     2024 — Crash 20413497
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_819f7e0dce67881980aad0b258274d34 = L.circleMarker(
+                [29.34466499, -98.50387231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_73ba75094219a0a6790a419bf78231de = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7b4dd7e60822dbcc0c9694f85bd6748a = $(`<div id="html_7b4dd7e60822dbcc0c9694f85bd6748a" style="width: 100.0%; height: 100.0%;"><b>Crash 20439104</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 50<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.344665<br>Longitude: -98.503872</div>`)[0];
+                popup_73ba75094219a0a6790a419bf78231de.setContent(html_7b4dd7e60822dbcc0c9694f85bd6748a);
+            
+        
+
+        circle_marker_819f7e0dce67881980aad0b258274d34.bindPopup(popup_73ba75094219a0a6790a419bf78231de)
+        ;
+
+        
+    
+    
+            circle_marker_819f7e0dce67881980aad0b258274d34.bindTooltip(
+                `<div>
+                     2024 — Crash 20439104
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2eb64a1beec3cae54d55d94e90929575 = L.circleMarker(
+                [29.42646497, -98.48974231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_b7fc70b0b36ef5de2c69fb14af63f137 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6d3184e2b126725d10b3929621c6168e = $(`<div id="html_6d3184e2b126725d10b3929621c6168e" style="width: 100.0%; height: 100.0%;"><b>Crash 20467405</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 29<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.426465<br>Longitude: -98.489742</div>`)[0];
+                popup_b7fc70b0b36ef5de2c69fb14af63f137.setContent(html_6d3184e2b126725d10b3929621c6168e);
+            
+        
+
+        circle_marker_2eb64a1beec3cae54d55d94e90929575.bindPopup(popup_b7fc70b0b36ef5de2c69fb14af63f137)
+        ;
+
+        
+    
+    
+            circle_marker_2eb64a1beec3cae54d55d94e90929575.bindTooltip(
+                `<div>
+                     2024 — Crash 20467405
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37a7beb8f38451fc0f0d9382318ad38b = L.circleMarker(
+                [29.39884952, -98.51311581],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_2458ff6b220a00f14392163f4203a9d9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ef6d276e92c34f8bc314d8a6dafc16b0 = $(`<div id="html_ef6d276e92c34f8bc314d8a6dafc16b0" style="width: 100.0%; height: 100.0%;"><b>Crash 20479259</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 16<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 41 - FAULTY EVASIVE ACTION; 69 - WRONG SIDE - APPROACH OR INTERSECTION; No Data<br>Latitude: 29.398850<br>Longitude: -98.513116</div>`)[0];
+                popup_2458ff6b220a00f14392163f4203a9d9.setContent(html_ef6d276e92c34f8bc314d8a6dafc16b0);
+            
+        
+
+        circle_marker_37a7beb8f38451fc0f0d9382318ad38b.bindPopup(popup_2458ff6b220a00f14392163f4203a9d9)
+        ;
+
+        
+    
+    
+            circle_marker_37a7beb8f38451fc0f0d9382318ad38b.bindTooltip(
+                `<div>
+                     2024 — Crash 20479259
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17144033d30edd5b2baf5a2d434e2e60 = L.circleMarker(
+                [29.42643497, -98.49315231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_ce0d087b5aaadbb249ec6ce72826a249 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_0618e6fb6a057b9df206515d0feb1bbc = $(`<div id="html_0618e6fb6a057b9df206515d0feb1bbc" style="width: 100.0%; height: 100.0%;"><b>Crash 20492452</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 31<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; 27 - FAILED TO PASS TO RIGHT SAFELY; No Data<br>Latitude: 29.426435<br>Longitude: -98.493152</div>`)[0];
+                popup_ce0d087b5aaadbb249ec6ce72826a249.setContent(html_0618e6fb6a057b9df206515d0feb1bbc);
+            
+        
+
+        circle_marker_17144033d30edd5b2baf5a2d434e2e60.bindPopup(popup_ce0d087b5aaadbb249ec6ce72826a249)
+        ;
+
+        
+    
+    
+            circle_marker_17144033d30edd5b2baf5a2d434e2e60.bindTooltip(
+                `<div>
+                     2024 — Crash 20492452
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5157570b69efb3b074de530f8d10042e = L.circleMarker(
+                [29.47977418, -98.54125559],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_25977276fdcd7a788b4b72b1dea15c41 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1bea0747783cc01a468e20d64df37d9d = $(`<div id="html_1bea0747783cc01a468e20d64df37d9d" style="width: 100.0%; height: 100.0%;"><b>Crash 20502122</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 44<br>Victim gender: 1 - MALE<br>Helmet: 3 - WORN, NOT DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.479774<br>Longitude: -98.541256</div>`)[0];
+                popup_25977276fdcd7a788b4b72b1dea15c41.setContent(html_1bea0747783cc01a468e20d64df37d9d);
+            
+        
+
+        circle_marker_5157570b69efb3b074de530f8d10042e.bindPopup(popup_25977276fdcd7a788b4b72b1dea15c41)
+        ;
+
+        
+    
+    
+            circle_marker_5157570b69efb3b074de530f8d10042e.bindTooltip(
+                `<div>
+                     2024 — Crash 20502122
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76f97f28842ab81e939d7d48fe9ebd19 = L.circleMarker(
+                [29.43980291, -98.52752969],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_19ce75477f5fe8839dd395baa6a83a3a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_cb8ac3b0d5f2c221c306e0a9a112de07 = $(`<div id="html_cb8ac3b0d5f2c221c306e0a9a112de07" style="width: 100.0%; height: 100.0%;"><b>Crash 20504324</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 30<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.439803<br>Longitude: -98.527530</div>`)[0];
+                popup_19ce75477f5fe8839dd395baa6a83a3a.setContent(html_cb8ac3b0d5f2c221c306e0a9a112de07);
+            
+        
+
+        circle_marker_76f97f28842ab81e939d7d48fe9ebd19.bindPopup(popup_19ce75477f5fe8839dd395baa6a83a3a)
+        ;
+
+        
+    
+    
+            circle_marker_76f97f28842ab81e939d7d48fe9ebd19.bindTooltip(
+                `<div>
+                     2024 — Crash 20504324
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8aa39aaf7ed1ca5090dd22607172dbf = L.circleMarker(
+                [29.34276701, -98.55330563],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_9cd0867a0bcf55123a3249b80d2d4f2e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3ec513d688892a7ca5398ef9f8e14ca0 = $(`<div id="html_3ec513d688892a7ca5398ef9f8e14ca0" style="width: 100.0%; height: 100.0%;"><b>Crash 20558764</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.342767<br>Longitude: -98.553306</div>`)[0];
+                popup_9cd0867a0bcf55123a3249b80d2d4f2e.setContent(html_3ec513d688892a7ca5398ef9f8e14ca0);
+            
+        
+
+        circle_marker_b8aa39aaf7ed1ca5090dd22607172dbf.bindPopup(popup_9cd0867a0bcf55123a3249b80d2d4f2e)
+        ;
+
+        
+    
+    
+            circle_marker_b8aa39aaf7ed1ca5090dd22607172dbf.bindTooltip(
+                `<div>
+                     2024 — Crash 20558764
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b062f407c51cc897474ae0dad53fb64 = L.circleMarker(
+                [29.49400496, -98.43505726],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_80576d7bb017dd93f9aed275ee51e304 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5572cf4390b7d60f43a4f82eea95824b = $(`<div id="html_5572cf4390b7d60f43a4f82eea95824b" style="width: 100.0%; height: 100.0%;"><b>Crash 20559642</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 20<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 22 - FAILED TO CONTROL SPEED; No Data; No Data<br>Latitude: 29.494005<br>Longitude: -98.435057</div>`)[0];
+                popup_80576d7bb017dd93f9aed275ee51e304.setContent(html_5572cf4390b7d60f43a4f82eea95824b);
+            
+        
+
+        circle_marker_3b062f407c51cc897474ae0dad53fb64.bindPopup(popup_80576d7bb017dd93f9aed275ee51e304)
+        ;
+
+        
+    
+    
+            circle_marker_3b062f407c51cc897474ae0dad53fb64.bindTooltip(
+                `<div>
+                     2024 — Crash 20559642
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42ce5d8ce4ba79f889cf042ad53e95a8 = L.circleMarker(
+                [29.42584497, -98.46563232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_e4017d0eebea42b43120acfd213a3948 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_fa5e9a81fb0256c6f4765fd6671e50ff = $(`<div id="html_fa5e9a81fb0256c6f4765fd6671e50ff" style="width: 100.0%; height: 100.0%;"><b>Crash 20560362</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.425845<br>Longitude: -98.465632</div>`)[0];
+                popup_e4017d0eebea42b43120acfd213a3948.setContent(html_fa5e9a81fb0256c6f4765fd6671e50ff);
+            
+        
+
+        circle_marker_42ce5d8ce4ba79f889cf042ad53e95a8.bindPopup(popup_e4017d0eebea42b43120acfd213a3948)
+        ;
+
+        
+    
+    
+            circle_marker_42ce5d8ce4ba79f889cf042ad53e95a8.bindTooltip(
+                `<div>
+                     2024 — Crash 20560362
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0cf966481801df8008f396c4782730e = L.circleMarker(
+                [29.55903494, -98.46150232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_491ee33294602d3e3632e1916ff960e9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b4a2fbc6013a1100693950cc628a5ed2 = $(`<div id="html_b4a2fbc6013a1100693950cc628a5ed2" style="width: 100.0%; height: 100.0%;"><b>Crash 20580237</b><br>Year: 2024<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.559035<br>Longitude: -98.461502</div>`)[0];
+                popup_491ee33294602d3e3632e1916ff960e9.setContent(html_b4a2fbc6013a1100693950cc628a5ed2);
+            
+        
+
+        circle_marker_d0cf966481801df8008f396c4782730e.bindPopup(popup_491ee33294602d3e3632e1916ff960e9)
+        ;
+
+        
+    
+    
+            circle_marker_d0cf966481801df8008f396c4782730e.bindTooltip(
+                `<div>
+                     2024 — Crash 20580237
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ae0a7ac66552e9d4424b4581a5ffd4e = L.circleMarker(
+                [29.31085991, -98.4742475],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_9f708df280863f5d72ef17d89f1cd5ea = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ce8c1fff942f183889683b12119106aa = $(`<div id="html_ce8c1fff942f183889683b12119106aa" style="width: 100.0%; height: 100.0%;"><b>Crash 20606789</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 35<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 27 - FAILED TO PASS TO RIGHT SAFELY; No Data; No Data<br>Latitude: 29.310860<br>Longitude: -98.474248</div>`)[0];
+                popup_9f708df280863f5d72ef17d89f1cd5ea.setContent(html_ce8c1fff942f183889683b12119106aa);
+            
+        
+
+        circle_marker_6ae0a7ac66552e9d4424b4581a5ffd4e.bindPopup(popup_9f708df280863f5d72ef17d89f1cd5ea)
+        ;
+
+        
+    
+    
+            circle_marker_6ae0a7ac66552e9d4424b4581a5ffd4e.bindTooltip(
+                `<div>
+                     2025 — Crash 20606789
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c51a513d5099d7796de0a7fa85e800cb = L.circleMarker(
+                [29.43149343, -98.56097534],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_fc08553c56baab727f55bdfc8a3cb40d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_fbcba9209af088cc24f42823076bc5d1 = $(`<div id="html_fbcba9209af088cc24f42823076bc5d1" style="width: 100.0%; height: 100.0%;"><b>Crash 20634686</b><br>Year: 2025<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 36<br>Victim gender: 2 - FEMALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.431493<br>Longitude: -98.560975</div>`)[0];
+                popup_fc08553c56baab727f55bdfc8a3cb40d.setContent(html_fbcba9209af088cc24f42823076bc5d1);
+            
+        
+
+        circle_marker_c51a513d5099d7796de0a7fa85e800cb.bindPopup(popup_fc08553c56baab727f55bdfc8a3cb40d)
+        ;
+
+        
+    
+    
+            circle_marker_c51a513d5099d7796de0a7fa85e800cb.bindTooltip(
+                `<div>
+                     2025 — Crash 20634686
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84f151b69b15256761bdf659512ddb9e = L.circleMarker(
+                [29.49735581, -98.34922439],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_cb456b433bc98fecd0497c0e4752b60d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_bfbf330781a0ea390079f7bd3b038495 = $(`<div id="html_bfbf330781a0ea390079f7bd3b038495" style="width: 100.0%; height: 100.0%;"><b>Crash 20676091</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 32<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.497356<br>Longitude: -98.349224</div>`)[0];
+                popup_cb456b433bc98fecd0497c0e4752b60d.setContent(html_bfbf330781a0ea390079f7bd3b038495);
+            
+        
+
+        circle_marker_84f151b69b15256761bdf659512ddb9e.bindPopup(popup_cb456b433bc98fecd0497c0e4752b60d)
+        ;
+
+        
+    
+    
+            circle_marker_84f151b69b15256761bdf659512ddb9e.bindTooltip(
+                `<div>
+                     2025 — Crash 20676091
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cee4d3dba07f0db1f92506bc4f0bf719 = L.circleMarker(
+                [29.49655495, -98.38905701],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_6429883553b5c3b80f43b22f0d888110 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7faa9f99d57f24c713c5bdeb798b3450 = $(`<div id="html_7faa9f99d57f24c713c5bdeb798b3450" style="width: 100.0%; height: 100.0%;"><b>Crash 20684528</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 15<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.496555<br>Longitude: -98.389057</div>`)[0];
+                popup_6429883553b5c3b80f43b22f0d888110.setContent(html_7faa9f99d57f24c713c5bdeb798b3450);
+            
+        
+
+        circle_marker_cee4d3dba07f0db1f92506bc4f0bf719.bindPopup(popup_6429883553b5c3b80f43b22f0d888110)
+        ;
+
+        
+    
+    
+            circle_marker_cee4d3dba07f0db1f92506bc4f0bf719.bindTooltip(
+                `<div>
+                     2025 — Crash 20684528
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f13c2cc6103aeb5278c90a81fb19a4ea = L.circleMarker(
+                [29.42989497, -98.5658323],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_feeb9600329c07786fa7566804c998e2 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_00ca19b6f9a203298e622fbc5bbbff4b = $(`<div id="html_00ca19b6f9a203298e622fbc5bbbff4b" style="width: 100.0%; height: 100.0%;"><b>Crash 20709191</b><br>Year: 2025<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.429895<br>Longitude: -98.565832</div>`)[0];
+                popup_feeb9600329c07786fa7566804c998e2.setContent(html_00ca19b6f9a203298e622fbc5bbbff4b);
+            
+        
+
+        circle_marker_f13c2cc6103aeb5278c90a81fb19a4ea.bindPopup(popup_feeb9600329c07786fa7566804c998e2)
+        ;
+
+        
+    
+    
+            circle_marker_f13c2cc6103aeb5278c90a81fb19a4ea.bindTooltip(
+                `<div>
+                     2025 — Crash 20709191
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5537f6c2c52f57614af9672bcffe5ce = L.circleMarker(
+                [29.48565497, -98.59377229],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_4bbb3cb8e4c8740ed35217848082f5a6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_08d2251e7b0004b2bdccdb2ce1015e4d = $(`<div id="html_08d2251e7b0004b2bdccdb2ce1015e4d" style="width: 100.0%; height: 100.0%;"><b>Crash 20712851</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.485655<br>Longitude: -98.593772</div>`)[0];
+                popup_4bbb3cb8e4c8740ed35217848082f5a6.setContent(html_08d2251e7b0004b2bdccdb2ce1015e4d);
+            
+        
+
+        circle_marker_a5537f6c2c52f57614af9672bcffe5ce.bindPopup(popup_4bbb3cb8e4c8740ed35217848082f5a6)
+        ;
+
+        
+    
+    
+            circle_marker_a5537f6c2c52f57614af9672bcffe5ce.bindTooltip(
+                `<div>
+                     2025 — Crash 20712851
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f436a1bd73f6811a979121af87e7a1f9 = L.circleMarker(
+                [29.55519135, -98.38255314],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_70a772f8cc9cf988351038515f78c92e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d00c0b5dc74a7f9541da43eb783e67cd = $(`<div id="html_d00c0b5dc74a7f9541da43eb783e67cd" style="width: 100.0%; height: 100.0%;"><b>Crash 20735073</b><br>Year: 2025<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 59<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.555191<br>Longitude: -98.382553</div>`)[0];
+                popup_70a772f8cc9cf988351038515f78c92e.setContent(html_d00c0b5dc74a7f9541da43eb783e67cd);
+            
+        
+
+        circle_marker_f436a1bd73f6811a979121af87e7a1f9.bindPopup(popup_70a772f8cc9cf988351038515f78c92e)
+        ;
+
+        
+    
+    
+            circle_marker_f436a1bd73f6811a979121af87e7a1f9.bindTooltip(
+                `<div>
+                     2025 — Crash 20735073
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a3dbe04b9ee798f659621727cc706aa = L.circleMarker(
+                [29.43018497, -98.47326232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_36f1a64c64c3f1b3f8774b724f66321a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_aabbee98ad6c214e09609350f8b43ae7 = $(`<div id="html_aabbee98ad6c214e09609350f8b43ae7" style="width: 100.0%; height: 100.0%;"><b>Crash 20750252</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 29<br>Victim gender: 1 - MALE<br>Helmet: 3 - WORN, NOT DAMAGED<br>Recorded contributing factors: 16 - DISREGARD STOP SIGN OR LIGHT; 22 - FAILED TO CONTROL SPEED; No Data<br>Latitude: 29.430185<br>Longitude: -98.473262</div>`)[0];
+                popup_36f1a64c64c3f1b3f8774b724f66321a.setContent(html_aabbee98ad6c214e09609350f8b43ae7);
+            
+        
+
+        circle_marker_1a3dbe04b9ee798f659621727cc706aa.bindPopup(popup_36f1a64c64c3f1b3f8774b724f66321a)
+        ;
+
+        
+    
+    
+            circle_marker_1a3dbe04b9ee798f659621727cc706aa.bindTooltip(
+                `<div>
+                     2025 — Crash 20750252
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f8c43ca45135ebda7a7974abe2960ad = L.circleMarker(
+                [29.35671904, -98.48670972],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_a3c96294dd6d6e1fec1e54e19d631d89 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1f943d448a1c2382d86cadfe4ca51182 = $(`<div id="html_1f943d448a1c2382d86cadfe4ca51182" style="width: 100.0%; height: 100.0%;"><b>Crash 20805389</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 33 - FAILED TO YIELD RIGHT OF WAY - OPEN INTERSECTION; 22 - FAILED TO CONTROL SPEED; No Data<br>Latitude: 29.356719<br>Longitude: -98.486710</div>`)[0];
+                popup_a3c96294dd6d6e1fec1e54e19d631d89.setContent(html_1f943d448a1c2382d86cadfe4ca51182);
+            
+        
+
+        circle_marker_1f8c43ca45135ebda7a7974abe2960ad.bindPopup(popup_a3c96294dd6d6e1fec1e54e19d631d89)
+        ;
+
+        
+    
+    
+            circle_marker_1f8c43ca45135ebda7a7974abe2960ad.bindTooltip(
+                `<div>
+                     2025 — Crash 20805389
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_add0cd2c212213cf258d3cd2a1482e4c = L.circleMarker(
+                [29.43183804, -98.47969395],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_4d49732bb9946f3de68849af8b93a8e3 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_24cc1ca8dc98e08429cbb82b93dfeaf0 = $(`<div id="html_24cc1ca8dc98e08429cbb82b93dfeaf0" style="width: 100.0%; height: 100.0%;"><b>Crash 20869086</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 66<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.431838<br>Longitude: -98.479694</div>`)[0];
+                popup_4d49732bb9946f3de68849af8b93a8e3.setContent(html_24cc1ca8dc98e08429cbb82b93dfeaf0);
+            
+        
+
+        circle_marker_add0cd2c212213cf258d3cd2a1482e4c.bindPopup(popup_4d49732bb9946f3de68849af8b93a8e3)
+        ;
+
+        
+    
+    
+            circle_marker_add0cd2c212213cf258d3cd2a1482e4c.bindTooltip(
+                `<div>
+                     2025 — Crash 20869086
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1eab1c45ccb9a4d84caf109bb368ffec = L.circleMarker(
+                [29.40197626, -98.40543973],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_c5ca23abdb022a363e885f02400dcc93 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_bc16142e5cfe0a5aa983bba54be7ea59 = $(`<div id="html_bc16142e5cfe0a5aa983bba54be7ea59" style="width: 100.0%; height: 100.0%;"><b>Crash 20917180</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 19<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.401976<br>Longitude: -98.405440</div>`)[0];
+                popup_c5ca23abdb022a363e885f02400dcc93.setContent(html_bc16142e5cfe0a5aa983bba54be7ea59);
+            
+        
+
+        circle_marker_1eab1c45ccb9a4d84caf109bb368ffec.bindPopup(popup_c5ca23abdb022a363e885f02400dcc93)
+        ;
+
+        
+    
+    
+            circle_marker_1eab1c45ccb9a4d84caf109bb368ffec.bindTooltip(
+                `<div>
+                     2025 — Crash 20917180
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_924f4125e2fcb65f50378e22c8b89d08 = L.circleMarker(
+                [29.35589232, -98.56267756],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_1b7ce7618f6618c712f2534b3a3ebc4d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_5dbdad52a0629d1ff3c4bbb15c3ca0a2 = $(`<div id="html_5dbdad52a0629d1ff3c4bbb15c3ca0a2" style="width: 100.0%; height: 100.0%;"><b>Crash 21003710</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 55<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.355892<br>Longitude: -98.562678</div>`)[0];
+                popup_1b7ce7618f6618c712f2534b3a3ebc4d.setContent(html_5dbdad52a0629d1ff3c4bbb15c3ca0a2);
+            
+        
+
+        circle_marker_924f4125e2fcb65f50378e22c8b89d08.bindPopup(popup_1b7ce7618f6618c712f2534b3a3ebc4d)
+        ;
+
+        
+    
+    
+            circle_marker_924f4125e2fcb65f50378e22c8b89d08.bindTooltip(
+                `<div>
+                     2025 — Crash 21003710
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_441ca148b56edae3b6fe63cd278a4bef = L.circleMarker(
+                [29.55554836, -98.40636892],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_36c15bc75b2b684797b9be2001ca152b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d61863d9eed7d3ca3520a69820fccb7b = $(`<div id="html_d61863d9eed7d3ca3520a69820fccb7b" style="width: 100.0%; height: 100.0%;"><b>Crash 21021506</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 10<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 33 - FAILED TO YIELD RIGHT OF WAY - OPEN INTERSECTION; No Data; No Data<br>Latitude: 29.555548<br>Longitude: -98.406369</div>`)[0];
+                popup_36c15bc75b2b684797b9be2001ca152b.setContent(html_d61863d9eed7d3ca3520a69820fccb7b);
+            
+        
+
+        circle_marker_441ca148b56edae3b6fe63cd278a4bef.bindPopup(popup_36c15bc75b2b684797b9be2001ca152b)
+        ;
+
+        
+    
+    
+            circle_marker_441ca148b56edae3b6fe63cd278a4bef.bindTooltip(
+                `<div>
+                     2025 — Crash 21021506
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00c367fed481c0e47cf23db39faba3ee = L.circleMarker(
+                [29.44064497, -98.49298231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_de9034e1a25ef6f6f9688835da562fc1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_0e9b93e02f5c45090ea6f9c9e1ec9488 = $(`<div id="html_0e9b93e02f5c45090ea6f9c9e1ec9488" style="width: 100.0%; height: 100.0%;"><b>Crash 21060036</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 26<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.440645<br>Longitude: -98.492982</div>`)[0];
+                popup_de9034e1a25ef6f6f9688835da562fc1.setContent(html_0e9b93e02f5c45090ea6f9c9e1ec9488);
+            
+        
+
+        circle_marker_00c367fed481c0e47cf23db39faba3ee.bindPopup(popup_de9034e1a25ef6f6f9688835da562fc1)
+        ;
+
+        
+    
+    
+            circle_marker_00c367fed481c0e47cf23db39faba3ee.bindTooltip(
+                `<div>
+                     2025 — Crash 21060036
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a83ae63fb00d603ed7e9e3ad761f6ae = L.circleMarker(
+                [29.39352848, -98.36478876],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_d2e5cbc51cf1662008c290b4d1c14762 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_663f0e11e99611e6fc57a15cd0e1e401 = $(`<div id="html_663f0e11e99611e6fc57a15cd0e1e401" style="width: 100.0%; height: 100.0%;"><b>Crash 21104484</b><br>Year: 2025<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 48<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.393528<br>Longitude: -98.364789</div>`)[0];
+                popup_d2e5cbc51cf1662008c290b4d1c14762.setContent(html_663f0e11e99611e6fc57a15cd0e1e401);
+            
+        
+
+        circle_marker_3a83ae63fb00d603ed7e9e3ad761f6ae.bindPopup(popup_d2e5cbc51cf1662008c290b4d1c14762)
+        ;
+
+        
+    
+    
+            circle_marker_3a83ae63fb00d603ed7e9e3ad761f6ae.bindTooltip(
+                `<div>
+                     2025 — Crash 21104484
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0e2de582a5b7af2addea7d795b4f889 = L.circleMarker(
+                [29.57241495, -98.61738228],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_7c84758179ba008779649e697a44a96b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b1f54a85b97abec23e0c2e9f5ca109dc = $(`<div id="html_b1f54a85b97abec23e0c2e9f5ca109dc" style="width: 100.0%; height: 100.0%;"><b>Crash 21113355</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 19<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 69 - WRONG SIDE - APPROACH OR INTERSECTION; No Data; No Data<br>Latitude: 29.572415<br>Longitude: -98.617382</div>`)[0];
+                popup_7c84758179ba008779649e697a44a96b.setContent(html_b1f54a85b97abec23e0c2e9f5ca109dc);
+            
+        
+
+        circle_marker_b0e2de582a5b7af2addea7d795b4f889.bindPopup(popup_7c84758179ba008779649e697a44a96b)
+        ;
+
+        
+    
+    
+            circle_marker_b0e2de582a5b7af2addea7d795b4f889.bindTooltip(
+                `<div>
+                     2025 — Crash 21113355
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c949315373f14c5a1ae8a6eb53524098 = L.circleMarker(
+                [29.42347391, -98.38914769],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_184402ad65b3145a3617b998999a0f7c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9753a519f6ea02c4e97f59c7b8749d10 = $(`<div id="html_9753a519f6ea02c4e97f59c7b8749d10" style="width: 100.0%; height: 100.0%;"><b>Crash 21125390</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 37<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.423474<br>Longitude: -98.389148</div>`)[0];
+                popup_184402ad65b3145a3617b998999a0f7c.setContent(html_9753a519f6ea02c4e97f59c7b8749d10);
+            
+        
+
+        circle_marker_c949315373f14c5a1ae8a6eb53524098.bindPopup(popup_184402ad65b3145a3617b998999a0f7c)
+        ;
+
+        
+    
+    
+            circle_marker_c949315373f14c5a1ae8a6eb53524098.bindTooltip(
+                `<div>
+                     2025 — Crash 21125390
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bb1c90c7cb104f8c40bd0e0073a49c0 = L.circleMarker(
+                [29.35116227, -98.4886296],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_f93e3b6a48b002cb35daedafdcc95282 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_253c2ee08cb4a2c7fb6c75f5d76f019f = $(`<div id="html_253c2ee08cb4a2c7fb6c75f5d76f019f" style="width: 100.0%; height: 100.0%;"><b>Crash 21180050</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 43<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.351162<br>Longitude: -98.488630</div>`)[0];
+                popup_f93e3b6a48b002cb35daedafdcc95282.setContent(html_253c2ee08cb4a2c7fb6c75f5d76f019f);
+            
+        
+
+        circle_marker_5bb1c90c7cb104f8c40bd0e0073a49c0.bindPopup(popup_f93e3b6a48b002cb35daedafdcc95282)
+        ;
+
+        
+    
+    
+            circle_marker_5bb1c90c7cb104f8c40bd0e0073a49c0.bindTooltip(
+                `<div>
+                     2025 — Crash 21180050
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9454dd03b45d857313c09ae0cb241b81 = L.circleMarker(
+                [29.39891498, -98.52815231],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_9d8cdc6fc1a5935e213d62a0d5a8009b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3abb1161ab71bd89218303ef29ce30f9 = $(`<div id="html_3abb1161ab71bd89218303ef29ce30f9" style="width: 100.0%; height: 100.0%;"><b>Crash 21197540</b><br>Year: 2025<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 48<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 66 - TURNED WHEN UNSAFE; No Data; No Data<br>Latitude: 29.398915<br>Longitude: -98.528152</div>`)[0];
+                popup_9d8cdc6fc1a5935e213d62a0d5a8009b.setContent(html_3abb1161ab71bd89218303ef29ce30f9);
+            
+        
+
+        circle_marker_9454dd03b45d857313c09ae0cb241b81.bindPopup(popup_9d8cdc6fc1a5935e213d62a0d5a8009b)
+        ;
+
+        
+    
+    
+            circle_marker_9454dd03b45d857313c09ae0cb241b81.bindTooltip(
+                `<div>
+                     2025 — Crash 21197540
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68049a8f61ace294a64925d1bfc80535 = L.circleMarker(
+                [29.50802073, -98.36986914],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_47373cee1a7295187972b757896c5023 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_bbad35c234e996071be62b4eac934d8f = $(`<div id="html_bbad35c234e996071be62b4eac934d8f" style="width: 100.0%; height: 100.0%;"><b>Crash 21206071</b><br>Year: 2025<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 50<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 35 - FAILED TO YIELD RIGHT OF WAY - STOP SIGN; No Data; No Data<br>Latitude: 29.508021<br>Longitude: -98.369869</div>`)[0];
+                popup_47373cee1a7295187972b757896c5023.setContent(html_bbad35c234e996071be62b4eac934d8f);
+            
+        
+
+        circle_marker_68049a8f61ace294a64925d1bfc80535.bindPopup(popup_47373cee1a7295187972b757896c5023)
+        ;
+
+        
+    
+    
+            circle_marker_68049a8f61ace294a64925d1bfc80535.bindTooltip(
+                `<div>
+                     2025 — Crash 21206071
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8dcabb4cb60afefd55429eb4aa2b8eff = L.circleMarker(
+                [29.54537973, -98.38366251],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_f3dc9430d2f8be405e84db28a22e0c62 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_378c9763a739bbac162fa2742a9fd107 = $(`<div id="html_378c9763a739bbac162fa2742a9fd107" style="width: 100.0%; height: 100.0%;"><b>Crash 21261878</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.545380<br>Longitude: -98.383663</div>`)[0];
+                popup_f3dc9430d2f8be405e84db28a22e0c62.setContent(html_378c9763a739bbac162fa2742a9fd107);
+            
+        
+
+        circle_marker_8dcabb4cb60afefd55429eb4aa2b8eff.bindPopup(popup_f3dc9430d2f8be405e84db28a22e0c62)
+        ;
+
+        
+    
+    
+            circle_marker_8dcabb4cb60afefd55429eb4aa2b8eff.bindTooltip(
+                `<div>
+                     2026 — Crash 21261878
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92aab726ad0253880d963c03324335de = L.circleMarker(
+                [29.36660498, -98.5514723],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_3a029a49b3fd25dedba98904049247f1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_0b06df2e815ca807c8048d7a4f2e2f31 = $(`<div id="html_0b06df2e815ca807c8048d7a4f2e2f31" style="width: 100.0%; height: 100.0%;"><b>Crash 21262641</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 27<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.366605<br>Longitude: -98.551472</div>`)[0];
+                popup_3a029a49b3fd25dedba98904049247f1.setContent(html_0b06df2e815ca807c8048d7a4f2e2f31);
+            
+        
+
+        circle_marker_92aab726ad0253880d963c03324335de.bindPopup(popup_3a029a49b3fd25dedba98904049247f1)
+        ;
+
+        
+    
+    
+            circle_marker_92aab726ad0253880d963c03324335de.bindTooltip(
+                `<div>
+                     2026 — Crash 21262641
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86b72f1071c1b7785779c423e7d6907c = L.circleMarker(
+                [29.45573497, -98.5327723],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e67e22", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_e68eaa2fc1f3899f25f31da08c99e526 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_988c5b484c54dfbbea6ed26ee6f679a5 = $(`<div id="html_988c5b484c54dfbbea6ed26ee6f679a5" style="width: 100.0%; height: 100.0%;"><b>Crash 21271110</b><br>Year: 2026<br>Outcome: 1 death(s), 0 serious injury/ies<br>Victim age: 46<br>Victim gender: 1 - MALE<br>Helmet: 2 - WORN, DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.455735<br>Longitude: -98.532772</div>`)[0];
+                popup_e68eaa2fc1f3899f25f31da08c99e526.setContent(html_988c5b484c54dfbbea6ed26ee6f679a5);
+            
+        
+
+        circle_marker_86b72f1071c1b7785779c423e7d6907c.bindPopup(popup_e68eaa2fc1f3899f25f31da08c99e526)
+        ;
+
+        
+    
+    
+            circle_marker_86b72f1071c1b7785779c423e7d6907c.bindTooltip(
+                `<div>
+                     2026 — Crash 21271110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd4f341703d00741ada9f817291e1949 = L.circleMarker(
+                [29.44777273, -98.42813252],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_c93bbe6758124c0ee190be1eb886f6b0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_71096ef1b832d80d86fc4de1ffd9434c = $(`<div id="html_71096ef1b832d80d86fc4de1ffd9434c" style="width: 100.0%; height: 100.0%;"><b>Crash 21298533</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 21<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 20 - DRIVER INATTENTION; No Data; No Data<br>Latitude: 29.447773<br>Longitude: -98.428133</div>`)[0];
+                popup_c93bbe6758124c0ee190be1eb886f6b0.setContent(html_71096ef1b832d80d86fc4de1ffd9434c);
+            
+        
+
+        circle_marker_bd4f341703d00741ada9f817291e1949.bindPopup(popup_c93bbe6758124c0ee190be1eb886f6b0)
+        ;
+
+        
+    
+    
+            circle_marker_bd4f341703d00741ada9f817291e1949.bindTooltip(
+                `<div>
+                     2026 — Crash 21298533
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_691f0b07fd9803ce7eabb6027cfb7be7 = L.circleMarker(
+                [29.46633497, -98.60250228],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_d75ef34c83539a1062e046cce3b8bebe = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_382eda4ee1b3b8f14faa77fcaa004352 = $(`<div id="html_382eda4ee1b3b8f14faa77fcaa004352" style="width: 100.0%; height: 100.0%;"><b>Crash 21352841</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 55<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.466335<br>Longitude: -98.602502</div>`)[0];
+                popup_d75ef34c83539a1062e046cce3b8bebe.setContent(html_382eda4ee1b3b8f14faa77fcaa004352);
+            
+        
+
+        circle_marker_691f0b07fd9803ce7eabb6027cfb7be7.bindPopup(popup_d75ef34c83539a1062e046cce3b8bebe)
+        ;
+
+        
+    
+    
+            circle_marker_691f0b07fd9803ce7eabb6027cfb7be7.bindTooltip(
+                `<div>
+                     2026 — Crash 21352841
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fdd0d86630a41d7a8c40831e61e35ff = L.circleMarker(
+                [29.40936597, -98.49632716],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_2dc7909b3c71820ed3fcf29cbaa6fe9b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ca3ccf516191384c5400779902629c82 = $(`<div id="html_ca3ccf516191384c5400779902629c82" style="width: 100.0%; height: 100.0%;"><b>Crash 21369195</b><br>Year: 2025<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 24<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.409366<br>Longitude: -98.496327</div>`)[0];
+                popup_2dc7909b3c71820ed3fcf29cbaa6fe9b.setContent(html_ca3ccf516191384c5400779902629c82);
+            
+        
+
+        circle_marker_1fdd0d86630a41d7a8c40831e61e35ff.bindPopup(popup_2dc7909b3c71820ed3fcf29cbaa6fe9b)
+        ;
+
+        
+    
+    
+            circle_marker_1fdd0d86630a41d7a8c40831e61e35ff.bindTooltip(
+                `<div>
+                     2025 — Crash 21369195
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e32db6911c1c4127c03ed6c25f3e221f = L.circleMarker(
+                [29.40583635, -98.50959436],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_267f63640e79911d616a480ee4f8008c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_094e50b6a851828fc8d546725c2e0d2a = $(`<div id="html_094e50b6a851828fc8d546725c2e0d2a" style="width: 100.0%; height: 100.0%;"><b>Crash 21395671</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 47<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.405836<br>Longitude: -98.509594</div>`)[0];
+                popup_267f63640e79911d616a480ee4f8008c.setContent(html_094e50b6a851828fc8d546725c2e0d2a);
+            
+        
+
+        circle_marker_e32db6911c1c4127c03ed6c25f3e221f.bindPopup(popup_267f63640e79911d616a480ee4f8008c)
+        ;
+
+        
+    
+    
+            circle_marker_e32db6911c1c4127c03ed6c25f3e221f.bindTooltip(
+                `<div>
+                     2026 — Crash 21395671
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_788b0b37a3a35e16f4f971a6affabe37 = L.circleMarker(
+                [29.42693497, -98.52582231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_e12c8e28dbcbb2e55dea617c60ba00b9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_29a611afc811ed9b2ae63c8831564619 = $(`<div id="html_29a611afc811ed9b2ae63c8831564619" style="width: 100.0%; height: 100.0%;"><b>Crash 21411305</b><br>Year: 2026<br>Outcome: 0 death(s), 2 serious injury/ies<br>Victim age: 23; 24<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.426935<br>Longitude: -98.525822</div>`)[0];
+                popup_e12c8e28dbcbb2e55dea617c60ba00b9.setContent(html_29a611afc811ed9b2ae63c8831564619);
+            
+        
+
+        circle_marker_788b0b37a3a35e16f4f971a6affabe37.bindPopup(popup_e12c8e28dbcbb2e55dea617c60ba00b9)
+        ;
+
+        
+    
+    
+            circle_marker_788b0b37a3a35e16f4f971a6affabe37.bindTooltip(
+                `<div>
+                     2026 — Crash 21411305
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eab6d676c10a47a7d4bc2fc7a5ed9f9e = L.circleMarker(
+                [29.41296526, -98.43180267],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_589d699b5b50e39ae0f6f0c2b9ab3d3c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b9fa399c0e53078d88b98ddf016e64e1 = $(`<div id="html_b9fa399c0e53078d88b98ddf016e64e1" style="width: 100.0%; height: 100.0%;"><b>Crash 21414702</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 66<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 37 - FAILED TO YIELD RIGHT OF WAY - TURNING LEFT; No Data; No Data<br>Latitude: 29.412965<br>Longitude: -98.431803</div>`)[0];
+                popup_589d699b5b50e39ae0f6f0c2b9ab3d3c.setContent(html_b9fa399c0e53078d88b98ddf016e64e1);
+            
+        
+
+        circle_marker_eab6d676c10a47a7d4bc2fc7a5ed9f9e.bindPopup(popup_589d699b5b50e39ae0f6f0c2b9ab3d3c)
+        ;
+
+        
+    
+    
+            circle_marker_eab6d676c10a47a7d4bc2fc7a5ed9f9e.bindTooltip(
+                `<div>
+                     2026 — Crash 21414702
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e27a99817883c0f2e6ccdb22de18e281 = L.circleMarker(
+                [29.41707498, -98.5632623],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_96c1f3ee3a7d66f63c4a660e1f770f73 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_10d5d37149098d9c47a0c6d9fdcb60b6 = $(`<div id="html_10d5d37149098d9c47a0c6d9fdcb60b6" style="width: 100.0%; height: 100.0%;"><b>Crash 21437935</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 39<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.417075<br>Longitude: -98.563262</div>`)[0];
+                popup_96c1f3ee3a7d66f63c4a660e1f770f73.setContent(html_10d5d37149098d9c47a0c6d9fdcb60b6);
+            
+        
+
+        circle_marker_e27a99817883c0f2e6ccdb22de18e281.bindPopup(popup_96c1f3ee3a7d66f63c4a660e1f770f73)
+        ;
+
+        
+    
+    
+            circle_marker_e27a99817883c0f2e6ccdb22de18e281.bindTooltip(
+                `<div>
+                     2026 — Crash 21437935
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a81ff4d1c15934be724dd6c671ced35 = L.circleMarker(
+                [29.45132497, -98.48610231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_37ca0161f53a9d06eb1a99f8ab678cae = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3997f120f4e66a2ae406baf017292dfa = $(`<div id="html_3997f120f4e66a2ae406baf017292dfa" style="width: 100.0%; height: 100.0%;"><b>Crash 21446395</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 22<br>Victim gender: 1 - MALE<br>Helmet: 3 - WORN, NOT DAMAGED<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.451325<br>Longitude: -98.486102</div>`)[0];
+                popup_37ca0161f53a9d06eb1a99f8ab678cae.setContent(html_3997f120f4e66a2ae406baf017292dfa);
+            
+        
+
+        circle_marker_9a81ff4d1c15934be724dd6c671ced35.bindPopup(popup_37ca0161f53a9d06eb1a99f8ab678cae)
+        ;
+
+        
+    
+    
+            circle_marker_9a81ff4d1c15934be724dd6c671ced35.bindTooltip(
+                `<div>
+                     2026 — Crash 21446395
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f240d29cfcffdf7fc743184ccf78a695 = L.circleMarker(
+                [29.39453232, -98.43647233],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_0c7fd002c7b8da3fa9fe602f56099a02 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_bbbf92c507747f91a88bbd631dc28c2d = $(`<div id="html_bbbf92c507747f91a88bbd631dc28c2d" style="width: 100.0%; height: 100.0%;"><b>Crash 21459853</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 3<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.394532<br>Longitude: -98.436472</div>`)[0];
+                popup_0c7fd002c7b8da3fa9fe602f56099a02.setContent(html_bbbf92c507747f91a88bbd631dc28c2d);
+            
+        
+
+        circle_marker_f240d29cfcffdf7fc743184ccf78a695.bindPopup(popup_0c7fd002c7b8da3fa9fe602f56099a02)
+        ;
+
+        
+    
+    
+            circle_marker_f240d29cfcffdf7fc743184ccf78a695.bindTooltip(
+                `<div>
+                     2026 — Crash 21459853
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43234bfa2147dc2d615743a64b96c615 = L.circleMarker(
+                [29.36048498, -98.49255232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_90ec0ee27699f6bbd03c5f06be3081c1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_706bc7c8b7ca962c465319d8d9c0d458 = $(`<div id="html_706bc7c8b7ca962c465319d8d9c0d458" style="width: 100.0%; height: 100.0%;"><b>Crash 21465558</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 51<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 16 - DISREGARD STOP SIGN OR LIGHT; No Data; No Data<br>Latitude: 29.360485<br>Longitude: -98.492552</div>`)[0];
+                popup_90ec0ee27699f6bbd03c5f06be3081c1.setContent(html_706bc7c8b7ca962c465319d8d9c0d458);
+            
+        
+
+        circle_marker_43234bfa2147dc2d615743a64b96c615.bindPopup(popup_90ec0ee27699f6bbd03c5f06be3081c1)
+        ;
+
+        
+    
+    
+            circle_marker_43234bfa2147dc2d615743a64b96c615.bindTooltip(
+                `<div>
+                     2026 — Crash 21465558
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_430f90b35cffc142e2ded33fa0394de6 = L.circleMarker(
+                [29.44402497, -98.47394232],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_24aa3333c66e10062f6a8ab404b96c49 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f23c4d65b25bee036c5a09a39ff57da9 = $(`<div id="html_f23c4d65b25bee036c5a09a39ff57da9" style="width: 100.0%; height: 100.0%;"><b>Crash 21479841</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 40<br>Victim gender: 1 - MALE<br>Helmet: 99 - UNKNOWN IF WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.444025<br>Longitude: -98.473942</div>`)[0];
+                popup_24aa3333c66e10062f6a8ab404b96c49.setContent(html_f23c4d65b25bee036c5a09a39ff57da9);
+            
+        
+
+        circle_marker_430f90b35cffc142e2ded33fa0394de6.bindPopup(popup_24aa3333c66e10062f6a8ab404b96c49)
+        ;
+
+        
+    
+    
+            circle_marker_430f90b35cffc142e2ded33fa0394de6.bindTooltip(
+                `<div>
+                     2026 — Crash 21479841
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4214b59f07426dfde3ab0e32e4826fc6 = L.circleMarker(
+                [29.38880528, -98.52187189],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_6f544bb3c75172ea53c6f7b9c195fd2f = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b8a3ac40e2101345e486cd0f9f93c7aa = $(`<div id="html_b8a3ac40e2101345e486cd0f9f93c7aa" style="width: 100.0%; height: 100.0%;"><b>Crash 21509355</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 66<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 69 - WRONG SIDE - APPROACH OR INTERSECTION; 98 - OTHER (EXPLAIN IN NARRATIVE); No Data<br>Latitude: 29.388805<br>Longitude: -98.521872</div>`)[0];
+                popup_6f544bb3c75172ea53c6f7b9c195fd2f.setContent(html_b8a3ac40e2101345e486cd0f9f93c7aa);
+            
+        
+
+        circle_marker_4214b59f07426dfde3ab0e32e4826fc6.bindPopup(popup_6f544bb3c75172ea53c6f7b9c195fd2f)
+        ;
+
+        
+    
+    
+            circle_marker_4214b59f07426dfde3ab0e32e4826fc6.bindTooltip(
+                `<div>
+                     2026 — Crash 21509355
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2adfc57c89b341fdf44aa3220de9ba2 = L.circleMarker(
+                [29.41970475, -98.53489911],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_55ea0875b94bcea7dc083cd66b9892e1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_af66af10cc25bee33362ba71c249c81b = $(`<div id="html_af66af10cc25bee33362ba71c249c81b" style="width: 100.0%; height: 100.0%;"><b>Crash 21514753</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 36<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 39 - FAILED TO YIELD RIGHT OF WAY - YIELD SIGN; No Data; No Data<br>Latitude: 29.419705<br>Longitude: -98.534899</div>`)[0];
+                popup_55ea0875b94bcea7dc083cd66b9892e1.setContent(html_af66af10cc25bee33362ba71c249c81b);
+            
+        
+
+        circle_marker_a2adfc57c89b341fdf44aa3220de9ba2.bindPopup(popup_55ea0875b94bcea7dc083cd66b9892e1)
+        ;
+
+        
+    
+    
+            circle_marker_a2adfc57c89b341fdf44aa3220de9ba2.bindTooltip(
+                `<div>
+                     2026 — Crash 21514753
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72e421505442ebfb69acffba95a95bbf = L.circleMarker(
+                [29.39248549, -98.48641941],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_efa19f17912cdaee681dc90ac45f060d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_d279c0249c73f47f4778204f5457f7c5 = $(`<div id="html_d279c0249c73f47f4778204f5457f7c5" style="width: 100.0%; height: 100.0%;"><b>Crash 21528273</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.392485<br>Longitude: -98.486419</div>`)[0];
+                popup_efa19f17912cdaee681dc90ac45f060d.setContent(html_d279c0249c73f47f4778204f5457f7c5);
+            
+        
+
+        circle_marker_72e421505442ebfb69acffba95a95bbf.bindPopup(popup_efa19f17912cdaee681dc90ac45f060d)
+        ;
+
+        
+    
+    
+            circle_marker_72e421505442ebfb69acffba95a95bbf.bindTooltip(
+                `<div>
+                     2026 — Crash 21528273
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2143bc066ce878f64901df5e34373a37 = L.circleMarker(
+                [29.44912207, -98.6026504],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_73392f8188de4c82c14754ae59cffb9e = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_efef005bd4e0d653154814dcd2e787bd = $(`<div id="html_efef005bd4e0d653154814dcd2e787bd" style="width: 100.0%; height: 100.0%;"><b>Crash 21595619</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 34<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.449122<br>Longitude: -98.602650</div>`)[0];
+                popup_73392f8188de4c82c14754ae59cffb9e.setContent(html_efef005bd4e0d653154814dcd2e787bd);
+            
+        
+
+        circle_marker_2143bc066ce878f64901df5e34373a37.bindPopup(popup_73392f8188de4c82c14754ae59cffb9e)
+        ;
+
+        
+    
+    
+            circle_marker_2143bc066ce878f64901df5e34373a37.bindTooltip(
+                `<div>
+                     2026 — Crash 21595619
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e23becb964b59e3e18b0087812b6d88b = L.circleMarker(
+                [29.42951188, -98.55425818],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_917df0d881acd807f5dce4b7ac1d96f7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_edd8cb86efdd545ad8046df0c50e0b1e = $(`<div id="html_edd8cb86efdd545ad8046df0c50e0b1e" style="width: 100.0%; height: 100.0%;"><b>Crash 21598611</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 43<br>Victim gender: 1 - MALE<br>Helmet: 4 - WORN, UNK DAMAGE<br>Recorded contributing factors: 98 - OTHER (EXPLAIN IN NARRATIVE); No Data; No Data<br>Latitude: 29.429512<br>Longitude: -98.554258</div>`)[0];
+                popup_917df0d881acd807f5dce4b7ac1d96f7.setContent(html_edd8cb86efdd545ad8046df0c50e0b1e);
+            
+        
+
+        circle_marker_e23becb964b59e3e18b0087812b6d88b.bindPopup(popup_917df0d881acd807f5dce4b7ac1d96f7)
+        ;
+
+        
+    
+    
+            circle_marker_e23becb964b59e3e18b0087812b6d88b.bindTooltip(
+                `<div>
+                     2026 — Crash 21598611
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a874832b176f88ad4d1492a679836678 = L.circleMarker(
+                [29.42655497, -98.52125231],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_debc04d6e8b7b3f8b2a08401391e6ce0 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_86678b5f5c6b2bffa7a89ee5d3103aa9 = $(`<div id="html_86678b5f5c6b2bffa7a89ee5d3103aa9" style="width: 100.0%; height: 100.0%;"><b>Crash 21599599</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: 62<br>Victim gender: 1 - MALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: 71 - WRONG WAY - ONE WAY ROAD; No Data; No Data<br>Latitude: 29.426555<br>Longitude: -98.521252</div>`)[0];
+                popup_debc04d6e8b7b3f8b2a08401391e6ce0.setContent(html_86678b5f5c6b2bffa7a89ee5d3103aa9);
+            
+        
+
+        circle_marker_a874832b176f88ad4d1492a679836678.bindPopup(popup_debc04d6e8b7b3f8b2a08401391e6ce0)
+        ;
+
+        
+    
+    
+            circle_marker_a874832b176f88ad4d1492a679836678.bindTooltip(
+                `<div>
+                     2026 — Crash 21599599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5408a77938c1146694fd6788052e916b = L.circleMarker(
+                [29.49874029, -98.4237048],
+                {"bubblingMouseEvents": true, "color": "#3478a4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3478a4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+        
+    
+        var popup_129911d894d6401595f10f6acb42623c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_788496ea8fbe0270245ffc34346d2740 = $(`<div id="html_788496ea8fbe0270245ffc34346d2740" style="width: 100.0%; height: 100.0%;"><b>Crash 21613516</b><br>Year: 2026<br>Outcome: 0 death(s), 1 serious injury/ies<br>Victim age: No Data<br>Victim gender: 2 - FEMALE<br>Helmet: 1 - NOT WORN<br>Recorded contributing factors: No Data; No Data; No Data<br>Latitude: 29.498740<br>Longitude: -98.423705</div>`)[0];
+                popup_129911d894d6401595f10f6acb42623c.setContent(html_788496ea8fbe0270245ffc34346d2740);
+            
+        
+
+        circle_marker_5408a77938c1146694fd6788052e916b.bindPopup(popup_129911d894d6401595f10f6acb42623c)
+        ;
+
+        
+    
+    
+            circle_marker_5408a77938c1146694fd6788052e916b.bindTooltip(
+                `<div>
+                     2026 — Crash 21613516
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_3739f1918d86447e4bf0714869ce96c4_layers = {
+                base_layers : {
+                },
+                overlays :  {
+                    "Candidate corridors" : geo_json_496d04cea6a6177a125b02fb71b71333,
+                },
+            };
+            let layer_control_3739f1918d86447e4bf0714869ce96c4 = L.control.layers(
+                layer_control_3739f1918d86447e4bf0714869ce96c4_layers.base_layers,
+                layer_control_3739f1918d86447e4bf0714869ce96c4_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_26c52eded22fc19168f6f2ea70c74c46);
+
+        
+</script>
+</html>
